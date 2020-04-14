@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e3c8750ebd0145fc8a0bfa019d00b292" Name="Diagram1">
+        <EntityTypeShape EntityType="AccModelModel.Field" Width="1.5" PointX="5.625" PointY="8.625" />
+        <EntityTypeShape EntityType="AccModelModel.Form" Width="1.5" PointX="3.375" PointY="4" />
+        <EntityTypeShape EntityType="AccModelModel.Menu" Width="1.5" PointX="5.625" PointY="5.375" />
+        <EntityTypeShape EntityType="AccModelModel.SubSystem" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="AccModelModel.SubSystemPermission" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="AccModelModel.UserFieldPermission" Width="1.5" PointX="7.875" PointY="4.75" />
+        <EntityTypeShape EntityType="AccModelModel.UserFormPermission" Width="1.5" PointX="5.625" PointY="2.625" />
+        <EntityTypeShape EntityType="AccModelModel.UserPersonalizationForColor" Width="1.5" PointX="3" PointY="7.625" />
+        <EntityTypeShape EntityType="AccModelModel.UserPersonalizationForFont" Width="1.5" PointX="3" PointY="10.875" />
+        <AssociationConnector Association="AccModelModel.FK_Field_Form" />
+        <AssociationConnector Association="AccModelModel.FK_UserFieldPermission_Field" />
+        <AssociationConnector Association="AccModelModel.FK_Menu_Form" />
+        <AssociationConnector Association="AccModelModel.FK_UserFormPermission_Form" />
+        <AssociationConnector Association="AccModelModel.Fk_SubSystemID" />
+        <EntityTypeShape EntityType="AccModelModel.User" Width="1.5" PointX="0.75" PointY="8.625" />
+        <AssociationConnector Association="AccModelModel.FK_UserFieldPermission_Users" />
+        <AssociationConnector Association="AccModelModel.FK_UserFormPermission_Users" />
+        <AssociationConnector Association="AccModelModel.FK_UserID" />
+        <AssociationConnector Association="AccModelModel.FK_UserPersonalizationForColor_Users" />
+        <AssociationConnector Association="AccModelModel.FK_UserPersonalizationForFont_Users" />
+        <EntityTypeShape EntityType="AccModelModel.ShortcutKey" Width="1.5" PointX="8.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AccModelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="UserPassWord" Type="varbinary" MaxLength="50" Nullable="false" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="BackGroundAddress" Type="nvarchar" MaxLength="2000" />
+        </EntityType>
+        <EntityType Name="Field">
+          <Key>
+            <PropertyRef Name="FieldID" />
+          </Key>
+          <Property Name="FieldID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FormID" Type="int" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Form">
+          <Key>
+            <PropertyRef Name="FormID" />
+          </Key>
+          <Property Name="FormID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="1000" />
+          <Property Name="NameSpace" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Class" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="MenuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubSystemID" Type="int" />
+          <Property Name="Titel" Type="nvarchar" MaxLength="100" />
+          <Property Name="ParentMenuID" Type="int" />
+          <Property Name="FormID" Type="int" />
+          <Property Name="order" Type="int" />
+          <Property Name="Shortcut" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ShortcutKey">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Shurtcut" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MainForm" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Dis" Type="nvarchar" MaxLength="500" />
+          <Property Name="EnumName" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="SubSystem">
+          <Key>
+            <PropertyRef Name="SubSystemId" />
+          </Key>
+          <Property Name="SubSystemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="1000" Nullable="false" />
+          <Property Name="Active" Type="bit" />
+          <Property Name="ShowOrder" Type="smallint" />
+        </EntityType>
+        <EntityType Name="SubSystemPermission">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SubSystemID" Type="int" />
+          <Property Name="UserID" Type="int" />
+        </EntityType>
+        <EntityType Name="UserFieldPermission">
+          <Key>
+            <PropertyRef Name="UserFieldPermissionID" />
+          </Key>
+          <Property Name="UserFieldPermissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="FieldID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserFormPermission">
+          <Key>
+            <PropertyRef Name="UserFormPermissionID" />
+          </Key>
+          <Property Name="UserFormPermissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="FormID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserPersonalizationForColor">
+          <Key>
+            <PropertyRef Name="PersonalizationColorID" />
+          </Key>
+          <Property Name="PersonalizationColorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="ControlNameID" Type="int" Nullable="false" />
+          <Property Name="ControlColorID" Type="int" Nullable="false" />
+          <Property Name="R" Type="int" Nullable="false" />
+          <Property Name="G" Type="int" Nullable="false" />
+          <Property Name="B" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserPersonalizationForFont">
+          <Key>
+            <PropertyRef Name="PersonalizationFontID" />
+          </Key>
+          <Property Name="PersonalizationFontID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="ControlNameID" Type="int" Nullable="false" />
+          <Property Name="FontSize" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Field_Form">
+          <End Role="Form" Type="Self.Form" Multiplicity="1" />
+          <End Role="Field" Type="Self.Field" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="Field">
+              <PropertyRef Name="FormID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_Form">
+          <End Role="Form" Type="Self.Form" Multiplicity="0..1" />
+          <End Role="Menu" Type="Self.Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="FormID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Fk_SubSystemID">
+          <End Role="SubSystem" Type="Self.SubSystem" Multiplicity="0..1" />
+          <End Role="SubSystemPermission" Type="Self.SubSystemPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SubSystem">
+              <PropertyRef Name="SubSystemId" />
+            </Principal>
+            <Dependent Role="SubSystemPermission">
+              <PropertyRef Name="SubSystemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserFieldPermission_Field">
+          <End Role="Field" Type="Self.Field" Multiplicity="1" />
+          <End Role="UserFieldPermission" Type="Self.UserFieldPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Field">
+              <PropertyRef Name="FieldID" />
+            </Principal>
+            <Dependent Role="UserFieldPermission">
+              <PropertyRef Name="FieldID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserFieldPermission_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="UserFieldPermission" Type="Self.UserFieldPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserFieldPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserFormPermission_Form">
+          <End Role="Form" Type="Self.Form" Multiplicity="1" />
+          <End Role="UserFormPermission" Type="Self.UserFormPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="UserFormPermission">
+              <PropertyRef Name="FormID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserFormPermission_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="UserFormPermission" Type="Self.UserFormPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserFormPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserID">
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="SubSystemPermission" Type="Self.SubSystemPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="SubSystemPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPersonalizationForColor_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="UserPersonalizationForColor" Type="Self.UserPersonalizationForColor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserPersonalizationForColor">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPersonalizationForFont_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="UserPersonalizationForFont" Type="Self.UserPersonalizationForFont" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserPersonalizationForFont">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="AddUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserID" Type="int" Mode="In" />
+          <Parameter Name="DBname" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="RestoreToDefault" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="deleteUsers" Type="bit" Mode="In" />
+        </Function>
+        <EntityContainer Name="AccModelModelStoreContainer">
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Field" EntityType="Self.Field" Schema="security" store:Type="Tables" />
+          <EntitySet Name="Form" EntityType="Self.Form" Schema="security" store:Type="Tables" />
+          <EntitySet Name="Menu" EntityType="Self.Menu" Schema="security" store:Type="Tables" />
+          <EntitySet Name="ShortcutKey" EntityType="Self.ShortcutKey" Schema="security" store:Type="Tables" />
+          <EntitySet Name="SubSystem" EntityType="Self.SubSystem" Schema="security" store:Type="Tables" />
+          <EntitySet Name="SubSystemPermission" EntityType="Self.SubSystemPermission" Schema="security" store:Type="Tables" />
+          <EntitySet Name="UserFieldPermission" EntityType="Self.UserFieldPermission" Schema="security" store:Type="Tables" />
+          <EntitySet Name="UserFormPermission" EntityType="Self.UserFormPermission" Schema="security" store:Type="Tables" />
+          <EntitySet Name="UserPersonalizationForColor" EntityType="Self.UserPersonalizationForColor" Schema="security" store:Type="Tables" />
+          <EntitySet Name="UserPersonalizationForFont" EntityType="Self.UserPersonalizationForFont" Schema="security" store:Type="Tables" />
+          <AssociationSet Name="FK_Field_Form" Association="Self.FK_Field_Form">
+            <End Role="Form" EntitySet="Form" />
+            <End Role="Field" EntitySet="Field" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_Form" Association="Self.FK_Menu_Form">
+            <End Role="Form" EntitySet="Form" />
+            <End Role="Menu" EntitySet="Menu" />
+          </AssociationSet>
+          <AssociationSet Name="Fk_SubSystemID" Association="Self.Fk_SubSystemID">
+            <End Role="SubSystem" EntitySet="SubSystem" />
+            <End Role="SubSystemPermission" EntitySet="SubSystemPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserFieldPermission_Field" Association="Self.FK_UserFieldPermission_Field">
+            <End Role="Field" EntitySet="Field" />
+            <End Role="UserFieldPermission" EntitySet="UserFieldPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserFieldPermission_Users" Association="Self.FK_UserFieldPermission_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserFieldPermission" EntitySet="UserFieldPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserFormPermission_Form" Association="Self.FK_UserFormPermission_Form">
+            <End Role="Form" EntitySet="Form" />
+            <End Role="UserFormPermission" EntitySet="UserFormPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserFormPermission_Users" Association="Self.FK_UserFormPermission_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserFormPermission" EntitySet="UserFormPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserID" Association="Self.FK_UserID">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="SubSystemPermission" EntitySet="SubSystemPermission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPersonalizationForColor_Users" Association="Self.FK_UserPersonalizationForColor_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserPersonalizationForColor" EntitySet="UserPersonalizationForColor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPersonalizationForFont_Users" Association="Self.FK_UserPersonalizationForFont_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="UserPersonalizationForFont" EntitySet="UserPersonalizationForFont" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AccModelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AccModelEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="RestoreToDefault">
+          <Parameter Name="deleteUsers" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <EntitySet Name="Fields" EntityType="AccModelModel.Field" />
+          <EntitySet Name="Forms" EntityType="AccModelModel.Form" />
+          <EntitySet Name="Menus" EntityType="AccModelModel.Menu" />
+          <EntitySet Name="SubSystems" EntityType="AccModelModel.SubSystem" />
+          <EntitySet Name="SubSystemPermissions" EntityType="AccModelModel.SubSystemPermission" />
+          <EntitySet Name="UserFieldPermissions" EntityType="AccModelModel.UserFieldPermission" />
+          <EntitySet Name="UserFormPermissions" EntityType="AccModelModel.UserFormPermission" />
+          <EntitySet Name="UserPersonalizationForColors" EntityType="AccModelModel.UserPersonalizationForColor" />
+          <EntitySet Name="UserPersonalizationForFonts" EntityType="AccModelModel.UserPersonalizationForFont" />
+          <AssociationSet Name="FK_Field_Form" Association="AccModelModel.FK_Field_Form">
+            <End Role="Form" EntitySet="Forms" />
+            <End Role="Field" EntitySet="Fields" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserFieldPermission_Field" Association="AccModelModel.FK_UserFieldPermission_Field">
+            <End Role="Field" EntitySet="Fields" />
+            <End Role="UserFieldPermission" EntitySet="UserFieldPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Menu_Form" Association="AccModelModel.FK_Menu_Form">
+            <End Role="Form" EntitySet="Forms" />
+            <End Role="Menu" EntitySet="Menus" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserFormPermission_Form" Association="AccModelModel.FK_UserFormPermission_Form">
+            <End Role="Form" EntitySet="Forms" />
+            <End Role="UserFormPermission" EntitySet="UserFormPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="Fk_SubSystemID" Association="AccModelModel.Fk_SubSystemID">
+            <End Role="SubSystem" EntitySet="SubSystems" />
+            <End Role="SubSystemPermission" EntitySet="SubSystemPermissions" />
+          </AssociationSet>
+          <EntitySet Name="Users" EntityType="AccModelModel.User" />
+          <AssociationSet Name="FK_UserFieldPermission_Users" Association="AccModelModel.FK_UserFieldPermission_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserFieldPermission" EntitySet="UserFieldPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserFormPermission_Users" Association="AccModelModel.FK_UserFormPermission_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserFormPermission" EntitySet="UserFormPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserID" Association="AccModelModel.FK_UserID">
+            <End Role="User" EntitySet="Users" />
+            <End Role="SubSystemPermission" EntitySet="SubSystemPermissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPersonalizationForColor_Users" Association="AccModelModel.FK_UserPersonalizationForColor_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserPersonalizationForColor" EntitySet="UserPersonalizationForColors" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserPersonalizationForFont_Users" Association="AccModelModel.FK_UserPersonalizationForFont_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserPersonalizationForFont" EntitySet="UserPersonalizationForFonts" />
+          </AssociationSet>
+          <FunctionImport Name="AddUser">
+            <Parameter Name="UserID" Mode="In" Type="Int32" />
+            <Parameter Name="DBname" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="ShortcutKeys" EntityType="AccModelModel.ShortcutKey" />
+        </EntityContainer>
+        <EntityType Name="Field">
+          <Key>
+            <PropertyRef Name="FieldID" />
+          </Key>
+          <Property Name="FieldID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FormID" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Form" Relationship="AccModelModel.FK_Field_Form" FromRole="Field" ToRole="Form" />
+          <NavigationProperty Name="UserFieldPermissions" Relationship="AccModelModel.FK_UserFieldPermission_Field" FromRole="Field" ToRole="UserFieldPermission" />
+        </EntityType>
+        <EntityType Name="Form">
+          <Key>
+            <PropertyRef Name="FormID" />
+          </Key>
+          <Property Name="FormID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="NameSpace" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Class" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Fields" Relationship="AccModelModel.FK_Field_Form" FromRole="Form" ToRole="Field" />
+          <NavigationProperty Name="Menus" Relationship="AccModelModel.FK_Menu_Form" FromRole="Form" ToRole="Menu" />
+          <NavigationProperty Name="UserFormPermissions" Relationship="AccModelModel.FK_UserFormPermission_Form" FromRole="Form" ToRole="UserFormPermission" />
+        </EntityType>
+        <EntityType Name="Menu">
+          <Key>
+            <PropertyRef Name="MenuID" />
+          </Key>
+          <Property Name="MenuID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubSystemID" Type="Int32" />
+          <Property Name="Titel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="ParentMenuID" Type="Int32" />
+          <Property Name="FormID" Type="Int32" />
+          <Property Name="order" Type="Int32" />
+          <Property Name="Shortcut" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Form" Relationship="AccModelModel.FK_Menu_Form" FromRole="Menu" ToRole="Form" />
+        </EntityType>
+        <EntityType Name="SubSystem">
+          <Key>
+            <PropertyRef Name="SubSystemId" />
+          </Key>
+          <Property Name="SubSystemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Active" Type="Boolean" />
+          <Property Name="ShowOrder" Type="Int16" />
+          <NavigationProperty Name="SubSystemPermissions" Relationship="AccModelModel.Fk_SubSystemID" FromRole="SubSystem" ToRole="SubSystemPermission" />
+        </EntityType>
+        <EntityType Name="SubSystemPermission">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SubSystemID" Type="Int32" />
+          <Property Name="UserID" Type="Int32" />
+          <NavigationProperty Name="SubSystem" Relationship="AccModelModel.Fk_SubSystemID" FromRole="SubSystemPermission" ToRole="SubSystem" />
+          <NavigationProperty Name="User" Relationship="AccModelModel.FK_UserID" FromRole="SubSystemPermission" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserFieldPermission">
+          <Key>
+            <PropertyRef Name="UserFieldPermissionID" />
+          </Key>
+          <Property Name="UserFieldPermissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="FieldID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Field" Relationship="AccModelModel.FK_UserFieldPermission_Field" FromRole="UserFieldPermission" ToRole="Field" />
+          <NavigationProperty Name="User" Relationship="AccModelModel.FK_UserFieldPermission_Users" FromRole="UserFieldPermission" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserFormPermission">
+          <Key>
+            <PropertyRef Name="UserFormPermissionID" />
+          </Key>
+          <Property Name="UserFormPermissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="FormID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Form" Relationship="AccModelModel.FK_UserFormPermission_Form" FromRole="UserFormPermission" ToRole="Form" />
+          <NavigationProperty Name="User" Relationship="AccModelModel.FK_UserFormPermission_Users" FromRole="UserFormPermission" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserPersonalizationForColor">
+          <Key>
+            <PropertyRef Name="PersonalizationColorID" />
+          </Key>
+          <Property Name="PersonalizationColorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="ControlNameID" Type="Int32" Nullable="false" />
+          <Property Name="ControlColorID" Type="Int32" Nullable="false" />
+          <Property Name="R" Type="Int32" Nullable="false" />
+          <Property Name="G" Type="Int32" Nullable="false" />
+          <Property Name="B" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="AccModelModel.FK_UserPersonalizationForColor_Users" FromRole="UserPersonalizationForColor" ToRole="User" />
+        </EntityType>
+        <EntityType Name="UserPersonalizationForFont">
+          <Key>
+            <PropertyRef Name="PersonalizationFontID" />
+          </Key>
+          <Property Name="PersonalizationFontID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="ControlNameID" Type="Int32" Nullable="false" />
+          <Property Name="FontSize" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="AccModelModel.FK_UserPersonalizationForFont_Users" FromRole="UserPersonalizationForFont" ToRole="User" />
+        </EntityType>
+        <Association Name="FK_Field_Form">
+          <End Type="AccModelModel.Form" Role="Form" Multiplicity="1" />
+          <End Type="AccModelModel.Field" Role="Field" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="Field">
+              <PropertyRef Name="FormID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserFieldPermission_Field">
+          <End Type="AccModelModel.Field" Role="Field" Multiplicity="1" />
+          <End Type="AccModelModel.UserFieldPermission" Role="UserFieldPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Field">
+              <PropertyRef Name="FieldID" />
+            </Principal>
+            <Dependent Role="UserFieldPermission">
+              <PropertyRef Name="FieldID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Menu_Form">
+          <End Type="AccModelModel.Form" Role="Form" Multiplicity="0..1" />
+          <End Type="AccModelModel.Menu" Role="Menu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="Menu">
+              <PropertyRef Name="FormID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserFormPermission_Form">
+          <End Type="AccModelModel.Form" Role="Form" Multiplicity="1" />
+          <End Type="AccModelModel.UserFormPermission" Role="UserFormPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="FormID" />
+            </Principal>
+            <Dependent Role="UserFormPermission">
+              <PropertyRef Name="FormID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Fk_SubSystemID">
+          <End Type="AccModelModel.SubSystem" Role="SubSystem" Multiplicity="0..1" />
+          <End Type="AccModelModel.SubSystemPermission" Role="SubSystemPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SubSystem">
+              <PropertyRef Name="SubSystemId" />
+            </Principal>
+            <Dependent Role="SubSystemPermission">
+              <PropertyRef Name="SubSystemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="UserID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserPassWord" Type="Binary" Nullable="false" MaxLength="50" FixedLength="false" />
+          <Property Name="Active" Type="Boolean" />
+          <NavigationProperty Name="UserFieldPermissions" Relationship="AccModelModel.FK_UserFieldPermission_Users" FromRole="User" ToRole="UserFieldPermission" />
+          <NavigationProperty Name="UserFormPermissions" Relationship="AccModelModel.FK_UserFormPermission_Users" FromRole="User" ToRole="UserFormPermission" />
+          <NavigationProperty Name="SubSystemPermissions" Relationship="AccModelModel.FK_UserID" FromRole="User" ToRole="SubSystemPermission" />
+          <NavigationProperty Name="UserPersonalizationForColors" Relationship="AccModelModel.FK_UserPersonalizationForColor_Users" FromRole="User" ToRole="UserPersonalizationForColor" />
+          <NavigationProperty Name="UserPersonalizationForFonts" Relationship="AccModelModel.FK_UserPersonalizationForFont_Users" FromRole="User" ToRole="UserPersonalizationForFont" />
+          <Property Name="BackGroundAddress" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_UserFieldPermission_Users">
+          <End Type="AccModelModel.User" Role="User" Multiplicity="1" />
+          <End Type="AccModelModel.UserFieldPermission" Role="UserFieldPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserFieldPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserFormPermission_Users">
+          <End Type="AccModelModel.User" Role="User" Multiplicity="1" />
+          <End Type="AccModelModel.UserFormPermission" Role="UserFormPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserFormPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserID">
+          <End Type="AccModelModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="AccModelModel.SubSystemPermission" Role="SubSystemPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="SubSystemPermission">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPersonalizationForColor_Users">
+          <End Type="AccModelModel.User" Role="User" Multiplicity="1" />
+          <End Type="AccModelModel.UserPersonalizationForColor" Role="UserPersonalizationForColor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserPersonalizationForColor">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserPersonalizationForFont_Users">
+          <End Type="AccModelModel.User" Role="User" Multiplicity="1" />
+          <End Type="AccModelModel.UserPersonalizationForFont" Role="UserPersonalizationForFont" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="UserID" />
+            </Principal>
+            <Dependent Role="UserPersonalizationForFont">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="ShortcutKey">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Shurtcut" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MainForm" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Dis" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="EnumName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AccModelModelStoreContainer" CdmEntityContainer="AccModelEntities">
+          <FunctionImportMapping FunctionImportName="RestoreToDefault" FunctionName="AccModelModel.Store.RestoreToDefault" />
+          <EntitySetMapping Name="Fields">
+            <EntityTypeMapping TypeName="AccModelModel.Field">
+              <MappingFragment StoreEntitySet="Field">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="FormID" ColumnName="FormID" />
+                <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Forms">
+            <EntityTypeMapping TypeName="AccModelModel.Form">
+              <MappingFragment StoreEntitySet="Form">
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="NameSpace" ColumnName="NameSpace" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="FormID" ColumnName="FormID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Menus">
+            <EntityTypeMapping TypeName="AccModelModel.Menu">
+              <MappingFragment StoreEntitySet="Menu">
+                <ScalarProperty Name="Shortcut" ColumnName="Shortcut" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="FormID" ColumnName="FormID" />
+                <ScalarProperty Name="ParentMenuID" ColumnName="ParentMenuID" />
+                <ScalarProperty Name="Titel" ColumnName="Titel" />
+                <ScalarProperty Name="SubSystemID" ColumnName="SubSystemID" />
+                <ScalarProperty Name="MenuID" ColumnName="MenuID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubSystems">
+            <EntityTypeMapping TypeName="AccModelModel.SubSystem">
+              <MappingFragment StoreEntitySet="SubSystem">
+                <ScalarProperty Name="ShowOrder" ColumnName="ShowOrder" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="SubSystemId" ColumnName="SubSystemId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SubSystemPermissions">
+            <EntityTypeMapping TypeName="AccModelModel.SubSystemPermission">
+              <MappingFragment StoreEntitySet="SubSystemPermission">
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="SubSystemID" ColumnName="SubSystemID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserFieldPermissions">
+            <EntityTypeMapping TypeName="AccModelModel.UserFieldPermission">
+              <MappingFragment StoreEntitySet="UserFieldPermission">
+                <ScalarProperty Name="FieldID" ColumnName="FieldID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserFieldPermissionID" ColumnName="UserFieldPermissionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserFormPermissions">
+            <EntityTypeMapping TypeName="AccModelModel.UserFormPermission">
+              <MappingFragment StoreEntitySet="UserFormPermission">
+                <ScalarProperty Name="FormID" ColumnName="FormID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="UserFormPermissionID" ColumnName="UserFormPermissionID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserPersonalizationForColors">
+            <EntityTypeMapping TypeName="AccModelModel.UserPersonalizationForColor">
+              <MappingFragment StoreEntitySet="UserPersonalizationForColor">
+                <ScalarProperty Name="B" ColumnName="B" />
+                <ScalarProperty Name="G" ColumnName="G" />
+                <ScalarProperty Name="R" ColumnName="R" />
+                <ScalarProperty Name="ControlColorID" ColumnName="ControlColorID" />
+                <ScalarProperty Name="ControlNameID" ColumnName="ControlNameID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PersonalizationColorID" ColumnName="PersonalizationColorID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserPersonalizationForFonts">
+            <EntityTypeMapping TypeName="AccModelModel.UserPersonalizationForFont">
+              <MappingFragment StoreEntitySet="UserPersonalizationForFont">
+                <ScalarProperty Name="FontSize" ColumnName="FontSize" />
+                <ScalarProperty Name="ControlNameID" ColumnName="ControlNameID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="PersonalizationFontID" ColumnName="PersonalizationFontID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="AccModelModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="BackGroundAddress" ColumnName="BackGroundAddress" />
+                <ScalarProperty Name="Active" ColumnName="Active" />
+                <ScalarProperty Name="UserPassWord" ColumnName="UserPassWord" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="AddUser" FunctionName="AccModelModel.Store.AddUser" />
+          <EntitySetMapping Name="ShortcutKeys">
+            <EntityTypeMapping TypeName="AccModelModel.ShortcutKey">
+              <MappingFragment StoreEntitySet="ShortcutKey">
+                <ScalarProperty Name="EnumName" ColumnName="EnumName" />
+                <ScalarProperty Name="Dis" ColumnName="Dis" />
+                <ScalarProperty Name="MainForm" ColumnName="MainForm" />
+                <ScalarProperty Name="Shurtcut" ColumnName="Shurtcut" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

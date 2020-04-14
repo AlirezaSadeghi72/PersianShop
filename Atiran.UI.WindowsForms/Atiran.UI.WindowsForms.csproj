@@ -1,0 +1,990 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AED2A5C-6B85-4120-8286-8DAD4007FB96}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Atiran.UI.WindowsForms</RootNamespace>
+    <AssemblyName>Atiran.UI.WindowsForms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\DLLs\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\DLLs\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=13.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\DLLs\Microsoft.SqlServer.SmoExtended.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Sadad.PcPos.Core">
+      <HintPath>..\..\..\..\Atiran2 DLL Add\Sadad.PcPos.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Design, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Viewer.SL, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Report.Viewer.SL.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Viewer.SL.Design, Version=2012.2.1304.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Stimulsoft Reports.Ultimate 2012.1 Trial\Bin\Stimulsoft.Report.Viewer.SL.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Z.EntityFramework.Extensions, Version=4.0.63.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Extensions.4.0.63\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Z.EntityFramework.Plus.EF6, Version=1.12.19.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Plus.EF6.1.12.19\lib\net45\Z.EntityFramework.Plus.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="Z.Expressions.Eval, Version=3.1.9.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.Expressions.Eval.3.1.9\lib\net45\Z.Expressions.Eval.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CloseFormService.cs" />
+    <Compile Include="Controls\BackgroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\BlinkLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\CancelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\DeleteButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\DisplayButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\EditButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\ExitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\HelpButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\LargeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\OkButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\PrintButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\RefreshButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Buttons\SaveButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\ComboCoxesColor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComboBoxes\LargeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ContextMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\DateControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ErrorProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FastBackup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FloatTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Loading.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\loadingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\pictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\QuestionMarkControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SplitContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxes\PlaceholderTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TimeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Timer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStripMenuItemAtiran.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToolStripProfessionalRendererAtiran.cs" />
+    <Compile Include="Controls\VerticalLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericTextBoxWithSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxes\LargeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBoxes\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeNode.cs" />
+    <Compile Include="Controls\TreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\UserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\VScrollBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EnvironmentNames.cs" />
+    <Compile Include="FontManager.cs" />
+    <Compile Include="GetHubForm.cs" />
+    <Compile Include="LoadingForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\MessageBoxLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\MessageBoxWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\MessageBoxError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\MessagBoxInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxes\MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PleaseWait.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="Controls\Checkbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.fa-IR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.fa-IR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.prs-AF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.prs-AF.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.ps-AF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.ps-AF.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcuts\AtiranSpotlight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Shortcuts\AtiranSpotlightItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIBuilder\EnvironmentGenerator.cs" />
+    <Compile Include="UIElements\AccountingEnviromentHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\AccountingStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\ActivatedForms.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\AtiranActivatedForms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIElements\CheckBackupPermission.cs" />
+    <Compile Include="UIElements\CloseEnviroment.cs" />
+    <Compile Include="UIElements\EnvironmentTitleHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\FloatingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIElements\Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIElements\CloseHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\DateAndTimeHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\EnviromentMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIElements\EnvironmentHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\EnvironmentMenu.cs" />
+    <Compile Include="UIElements\GroupByReportsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIElements\Header.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\HeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\HeaderSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\HelpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIElements\HomeHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\HubHeader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\HubSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\LineHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\LoginCloseHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\LoginMaximizeHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\LoginMinimizeHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MaximizeHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuButtonLevelOne.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuButtonLevelTwo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuContainer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuContainerLevelOne.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuContainerLevelTwo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuItemSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MenuLauncherButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\MinimizeHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\PathHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\ShortcutHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\SizeGrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\RTLLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\SortControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UIElements\SortService.cs" />
+    <Compile Include="UIElements\StackPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\StatusBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\Tab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\TabBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\TitleHeaderSeperator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\UserHeaderButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIElements\UserOnline.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControlLoader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ComboBoxes\ComboCoxesColor.resx">
+      <DependentUpon>ComboCoxesColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DateControl.resx">
+      <DependentUpon>DateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FastBackup.resx">
+      <DependentUpon>FastBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\loadingControl.resx">
+      <DependentUpon>loadingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\QuestionMarkControl.resx">
+      <DependentUpon>QuestionMarkControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TimeControl.resx">
+      <DependentUpon>TimeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\UserControl.resx">
+      <DependentUpon>UserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\MessageBoxLoading.resx">
+      <DependentUpon>MessageBoxLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\MessageBoxWarning.resx">
+      <DependentUpon>MessageBoxWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\MessageBoxError.resx">
+      <DependentUpon>MessageBoxError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\MessagBoxInfo.resx">
+      <DependentUpon>MessagBoxInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxes\MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.fa-IR.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.fa-IR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.prs-AF.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.prs-AF.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.ps-AF.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ps-AF.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIElements\EnviromentMainForm.resx">
+      <DependentUpon>EnviromentMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIElements\FloatingForm.resx">
+      <DependentUpon>FloatingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIElements\GroupByReportsControl.resx">
+      <DependentUpon>GroupByReportsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIElements\HelpControl.resx">
+      <DependentUpon>HelpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIElements\SortControl.resx">
+      <DependentUpon>SortControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Atiran.Connections\Atiran.Connections.csproj">
+      <Project>{039d942e-1769-41c4-96ea-db8e170a374e}</Project>
+      <Name>Atiran.Connections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atiran.CustomDocking\Atiran.CustomDocking.csproj">
+      <Project>{8680b98f-c380-42da-9432-96c0e1954d15}</Project>
+      <Name>Atiran.CustomDocking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Drawing.Color.datasource" />
+    <None Include="Properties\DataSources\System.Drawing.ColorConverter.datasource" />
+    <None Include="Properties\DataSources\System.Drawing.ColorTranslator.datasource" />
+    <None Include="Resources\AtiranFont.ttf" />
+    <None Include="Resources\AtiranFont_Bold.ttf" />
+    <None Include="Resources\AtiranFont_Light.ttf" />
+    <None Include="Resources\AtiranFont_Medium.ttf" />
+    <None Include="Resources\AtiranFont_Number.ttf" />
+    <None Include="Resources\AtiranFont_UltraLight.ttf" />
+    <None Include="Resources\BNazanin.TTF" />
+    <None Include="Resources\Close_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_36px_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_36px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_36px_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IRANSans%28FaNum%29.ttf" />
+    <None Include="Resources\IRANSans%28FaNum%29_Bold.ttf" />
+    <None Include="Resources\IRANSans%28FaNum%29_Light.ttf" />
+    <None Include="Resources\IRANSans%28FaNum%29_Medium.ttf" />
+    <None Include="Resources\IRANSans%28FaNum%29_UltraLight.ttf" />
+    <None Include="Resources\Max_33px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Max_33px_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mix_39px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mix_39px_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore_33px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Restore_33px_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Anbar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Forush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_GozaModir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Hub.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_ModiForush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Rahyaab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Settings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Size_Grip_20px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back_Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtiranLogo_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Warehouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Accounting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Dashboards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Rahyab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_Sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon_SalesManagement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UIElements\Designs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchUsers_58px_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SwitchUsers_58px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-circle_s.png" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\redo_disabled.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\save_disabled.png" />
+    <None Include="Resources\undo_disabled.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\paste_disabled.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\undo_hover.png" />
+    <None Include="Resources\save_hover.png" />
+    <None Include="Resources\redo_hover.png" />
+    <None Include="Resources\paste_hover.png" />
+    <None Include="Resources\Menu.jpg" />
+    <None Include="Resources\PopUp_Pointer.png" />
+    <None Include="Resources\Back.jpg" />
+    <None Include="Resources\copy_hover.png" />
+    <None Include="Resources\cut_hover.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\cut_disabled.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\copy_disabled.png" />
+    <None Include="Resources\Colors.png" />
+    <None Include="Resources\Colors_hover.png" />
+    <None Include="Resources\green-circle_s.png" />
+    <None Include="Resources\Icon_Accounting_hover.png" />
+    <None Include="Resources\Icon_Accounting_OFF.png" />
+    <None Include="Resources\Icon_Rahyab_hover.png" />
+    <None Include="Resources\Icon_Rahyab_OFF.png" />
+    <None Include="Resources\Icon_Sales_hover.png" />
+    <None Include="Resources\Icon_Sales_OFF.png" />
+    <None Include="Resources\Icon_SalesManagement_hover.png" />
+    <None Include="Resources\Icon_SalesManagement_OFF.png" />
+    <None Include="Resources\Icon_Settings_OFF.png" />
+    <None Include="Resources\Icon_Warehouse_hover.png" />
+    <None Include="Resources\Icon_Warehouse_OFF.png" />
+    <None Include="Resources\Icon_Settings_hover.png" />
+    <None Include="Resources\Back_Hesab.jpg" />
+    <None Include="Resources\Icon_Dashboards_hover.png" />
+    <None Include="Resources\Icon_Dashboards_OFF.png" />
+    <None Include="Resources\Icon_Reporting_hover.png" />
+    <None Include="Resources\Icon_Reporting_OFF.png" />
+    <None Include="Resources\Login_Close.png" />
+    <None Include="Resources\Login_Close_36px.png" />
+    <None Include="Resources\Login_Close_36px_hover.png" />
+    <None Include="Resources\Login_Max_33px.png" />
+    <None Include="Resources\Login_Max_33px_hover.png" />
+    <None Include="Resources\Login_Min_39px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Min_39px_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Tab_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Tab_hover_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Tab_30px.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Tab_hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tab_23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tab_23_Active.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Tab_Active.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Tab_Active_hover.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close_Tab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiting.gif" />
+    <None Include="Resources\Treasury_Tiny.png" />
+    <None Include="Resources\Treasury.png" />
+    <None Include="Resources\Treasurt_H.png" />
+    <None Include="Resources\visitor-icon.png" />
+    <None Include="Resources\user_hover.png" />
+    <None Include="Resources\yellow_customer.png" />
+    <None Include="Resources\truck.svg" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Back_EMS .jpg" />
+    <None Include="Resources\Back_Backup.jpg" />
+    <None Include="Resources\Anbaar.png" />
+    <None Include="Resources\Anbaar_H.png" />
+    <None Include="Resources\Backup.png" />
+    <None Include="Resources\Backup_H.png" />
+    <None Include="Resources\EMS.png" />
+    <None Include="Resources\EMS_H.png" />
+    <None Include="Resources\Hamraah.png" />
+    <None Include="Resources\Hamraah_H.png" />
+    <None Include="Resources\Hesabdari.png" />
+    <None Include="Resources\Hesabdari_H.png" />
+    <None Include="Resources\Background_Accounting.jpg" />
+    <None Include="Resources\Background_Backup.jpg" />
+    <None Include="Resources\Background_EMS.jpg" />
+    <None Include="Resources\Background_Inventory.jpg" />
+    <None Include="Resources\Background_MngReports.jpg" />
+    <None Include="Resources\Background_Mobile.jpg" />
+    <None Include="Resources\Background_Rahyaab.jpg" />
+    <None Include="Resources\Background_Reports.jpg" />
+    <None Include="Resources\Background_Sallery.jpg" />
+    <None Include="Resources\Background_Selling-Mng.jpg" />
+    <None Include="Resources\Background_Settings.jpg" />
+    <None Include="Resources\Background_SMS.jpg" />
+    <None Include="Resources\animated-loading.gif" />
+    <None Include="Resources\Atiran-Multilines.jpg" />
+    <None Include="Resources\ajax-loader.gif" />
+    <None Include="Resources\debtor_customer.png" />
+    <None Include="Resources\blue_customer.png" />
+    <None Include="Resources\bullet_blue.png" />
+    <None Include="Resources\Car.png" />
+    <None Include="Resources\circle.png" />
+    <None Include="Resources\default_customer.png" />
+    <None Include="Resources\green_customer.png" />
+    <None Include="Resources\green-circle.png" />
+    <None Include="Resources\BlurTag.png" />
+    <Content Include="Resources\376.png" />
+    <None Include="Resources\LineArrow.png" />
+    <None Include="Resources\DeAnbaar.png" />
+    <None Include="Resources\DeBackup.png" />
+    <None Include="Resources\DeEMS.png" />
+    <None Include="Resources\DeHamraah.png" />
+    <None Include="Resources\DeHesabdari.png" />
+    <None Include="Resources\DeModiriat-Reports.png" />
+    <None Include="Resources\DeRahyaab.png" />
+    <None Include="Resources\DeReports.png" />
+    <None Include="Resources\DeSallery.png" />
+    <None Include="Resources\DeSelling.png" />
+    <None Include="Resources\DeSelling-Management.png" />
+    <None Include="Resources\DeSMS.png" />
+    <None Include="Resources\DeSettings.png" />
+    <None Include="Resources\bottom.png" />
+    <None Include="Resources\Actions-arrow-left-icon.png" />
+    <None Include="Resources\Basic-Information.png" />
+    <None Include="Resources\Basic-InformationH.png" />
+    <None Include="Resources\Background-BasicInformation.jpg" />
+    <None Include="Resources\anbaar_tiny.ico" />
+    <None Include="Resources\anbaar_tiny_icon.ico" />
+    <None Include="Resources\Hesabdari_tiny_icon.ico" />
+    <None Include="Resources\Ems_tiny_icon.ico" />
+    <None Include="Resources\Backup_tiny_icon.ico" />
+    <None Include="Resources\Basic_information_tiny_icon.ico" />
+    <None Include="Resources\Anbaar_Tiny.png" />
+    <None Include="Resources\Backup_Tiny.png" />
+    <None Include="Resources\Basic-Information_Tiny.png" />
+    <None Include="Resources\EMS_Tiny.png" />
+    <None Include="Resources\Hesabdari_Tiny.png" />
+    <None Include="Resources\Atiran_Spotlight_Background.jpg" />
+    <None Include="Resources\Atiran_Spotlight_Icon.png" />
+    <None Include="Resources\Atiran-HUB_treasurer.jpg" />
+    <None Include="Resources\Background_Treasury.jpg" />
+    <None Include="Resources\Background_Selling.jpg" />
+    <None Include="Resources\Background_Selling_Mng.jpg" />
+    <None Include="Resources\Background_Selling_Mng1.jpg" />
+    <None Include="Resources\DeSelling-Management1.png" />
+    <None Include="Resources\fluid-loader.gif" />
+    <None Include="Resources\BackSpace.png" />
+    <None Include="Resources\broom.png" />
+    <Content Include="Resources\left.png" />
+    <None Include="Resources\loading.gif" />
+    <Content Include="Resources\Login_Background.jpg" />
+    <None Include="Resources\Modiriat-Reports.png" />
+    <None Include="Resources\Modiriat-Reports_H.png" />
+    <None Include="Resources\Rahyaab.png" />
+    <None Include="Resources\Rahyaab_H.png" />
+    <None Include="Resources\Reports.png" />
+    <None Include="Resources\Reports_H.png" />
+    <None Include="Resources\Sallery.png" />
+    <None Include="Resources\Sallery_H.png" />
+    <None Include="Resources\Selling.png" />
+    <None Include="Resources\Selling_H.png" />
+    <None Include="Resources\Selling-Management.png" />
+    <None Include="Resources\Selling-Management_H.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\Settings_H.png" />
+    <None Include="Resources\SMS.png" />
+    <None Include="Resources\SMS_H.png" />
+    <None Include="Resources\No-Internet-Connection.png" />
+    <None Include="Resources\MultiLines.jpg" />
+    <None Include="Resources\Rahyaab_Stop.png" />
+    <None Include="Resources\orange_customer.png" />
+    <None Include="Resources\PointArrow.png" />
+    <None Include="Resources\red_customer.png" />
+    <None Include="Resources\red-circle.png" />
+    <None Include="Resources\Sort.png" />
+    <None Include="Resources\Pedro_luis_romani_ruiz.gif" />
+    <Content Include="Resources\Logo_Sadad.png" />
+    <None Include="Resources\Logo_SalePos.png" />
+    <Content Include="Resources\Print.png" />
+    <None Include="Resources\Rahyaab_tiny_icon.ico" />
+    <None Include="Resources\Reports_tiny_icon.ico" />
+    <None Include="Resources\Rahyaab_Tiny.png" />
+    <None Include="Resources\Reports_Tiny.png" />
+    <None Include="Resources\question.png" />
+    <Content Include="Resources\right.png" />
+    <None Include="Resources\ro tab bar.jpg" />
+    <Content Include="Resources\search.png" />
+    <Content Include="Resources\search_black.png" />
+    <Content Include="Resources\search_black_144x144.png" />
+    <None Include="Resources\sort_down_green.png" />
+    <None Include="Resources\status_online.png" />
+    <None Include="Resources\Selling_management_tiny_icon.ico" />
+    <None Include="Resources\Selling_tiny_icon.ico" />
+    <None Include="Resources\Settings_tiny_icon.ico" />
+    <None Include="Resources\Sms_tiny_icon.ico" />
+    <None Include="Resources\Selling_Tiny.png" />
+    <None Include="Resources\Selling-Management_Tiny.png" />
+    <None Include="Resources\Settings_Tiny.png" />
+    <None Include="Resources\SMS_Tiny.png" />
+    <None Include="Resources\Selling-Management1.png" />
+    <None Include="Resources\Selling-Management_H1.png" />
+    <None Include="Resources\Selling-Management_Tiny1.png" />
+    <Content Include="Resources\toggle.png" />
+    <None Include="Resources\Information.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\error1.png" />
+    <None Include="Resources\Alarm.png" />
+    <None Include="Resources\Icon_EMS.png" />
+    <None Include="Resources\Icon_EMS_hover.png" />
+    <None Include="Resources\Icon_Back-up_Hover.png" />
+    <None Include="Resources\Icon_Back-up.png" />
+    <Content Include="Resources\info.png" />
+    <None Include="Resources\info1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

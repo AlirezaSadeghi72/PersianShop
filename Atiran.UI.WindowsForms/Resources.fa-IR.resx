@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AtiranLogo_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtiranLogo_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Anbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Anbar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Forush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Forush.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_GozaModir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_GozaModir.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Hesab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Hesab.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Hub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Hub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_ModiForush" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_ModiForush.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Rahyaab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Rahyaab.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Settings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+
+  <data name="Close_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_36px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_36px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Home_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home_36px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Home_36px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Max_33px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Max_33px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Max_33px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Max_33px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mix_39px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mix_39px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mix_39px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mix_39px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restore_33px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Restore_33px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restore_33px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Restore_33px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Size_Grip_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Size_Grip_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwitchUsers_58px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SwitchUsers_58px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SwitchUsers_58px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SwitchUsers_58px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ADD_VISITOR_TO_SUPERVISOR" xml:space="preserve">
+    <value>ویزیتور به سوپروایزر اضافه شد</value>
+  </data>
+  <data name="ERR_FEILD_REQUIRED" xml:space="preserve">
+    <value>خطا - لطفا تمامی فیلدها را پر کنید</value>
+  </data>
+  <data name="ERR_PASSWORD_IS_EMPTY" xml:space="preserve">
+    <value>خطا - کلمه عبور وارد نشده است</value>
+  </data>
+  <data name="ERR_PASSWORD_IS_NOT_CORRECT" xml:space="preserve">
+    <value>خطا - کلمه عبور اشتباه است</value>
+  </data>
+  <data name="ERR_USERNAME_IS_EMPTY" xml:space="preserve">
+    <value>خطا - نام کاربری وارد نشده است</value>
+  </data>
+  <data name="ERR_USER_IS_LOCKED" xml:space="preserve">
+    <value>خطا - دسترسی این کاربر قفل شده است</value>
+  </data>
+  <data name="ERR_USER_NOT_EXISTS" xml:space="preserve">
+    <value>خطا - کاربری با این نام کاربری وجود ندارد</value>
+  </data>
+  <data name="Hub_lblHubItemAccounting_Text" xml:space="preserve">
+    <value>آتیران حسابداری</value>
+  </data>
+  <data name="Hub_lblHubItemRahyab_Text" xml:space="preserve">
+    <value>سفارش گیر انلاین - رهیاب</value>
+  </data>
+  <data name="Hub_lblHubItemReporting_Text" xml:space="preserve">
+    <value>گزارشات</value>
+  </data>
+  <data name="Hub_lblHubItemSalesManagement_Text" xml:space="preserve">
+    <value>آتیران مدیریت فروش</value>
+  </data>
+  <data name="HublblHubItemKalaGostaranText" xml:space="preserve">
+    <value>كالا گستران</value>
+  </data>
+  <data name="Hub_lblHubItemSales_Text" xml:space="preserve">
+    <value>آتیران خريد و فروش</value>
+  </data>
+  <data name="Hub_lblHubItemSettings_Text" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="Hub_lblHubItemWarehouse_Text" xml:space="preserve">
+    <value>آتیران انبار</value>
+  </data>
+  <data name="LoginForm_btnSignIn_Text" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="LoginForm_lblFiscalYear_Text" xml:space="preserve">
+    <value>سال مالی</value>
+  </data>
+  <data name="LoginForm_lblPassword_Text" xml:space="preserve">
+    <value>کلمه عبور</value>
+  </data>
+  <data name="LoginForm_lblUsername_Text" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="REMOVE_VISITOR_FROM_SUPERVISOR" xml:space="preserve">
+    <value>ویزیتور از سوپروایزر حذف شد</value>
+  </data>
+  <data name="VisitorManagment_BtnAdd_text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="VisitorManagment_BtnCancel_text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="VisitorManagment_BtnDelete_text" xml:space="preserve">
+    <value>حذف از ویزیتور</value>
+  </data>
+  <data name="VisitorManagment_BtnEdit_text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="VisitorManagment_lblCountSailesTeam_text" xml:space="preserve">
+    <value>تعداد تیم فروش</value>
+  </data>
+  <data name="VisitorManagment_lblSupervisor_text" xml:space="preserve">
+    <value>نام سوپروایزر</value>
+  </data>
+  <data name="VisitorManagment_lblTitle_Text" xml:space="preserve">
+    <value>مدیریت تیم فروش</value>
+  </data>
+  <data name="VisitorManagment_lblVisitor_text" xml:space="preserve">
+    <value>نام ویزیتور</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDate_Text" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDocNo_Text" xml:space="preserve">
+    <value>شماره سند</value>
+  </data>
+  <data name="WarehouseInputDocument_btnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="WarehouseInputDocument_btnSave_Text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="WarehouseInputDocument_lblAtiranDocNo_Text" xml:space="preserve">
+    <value>شماره سند آتیران</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDescription_Text" xml:space="preserve">
+    <value>شرح</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDocType_Text" xml:space="preserve">
+    <value>نوع سند</value>
+  </data>
+  <data name="WarehouseInputDocument_lblCustomer_Text" xml:space="preserve">
+    <value>آقای / شرکت</value>
+  </data>
+  <data name="WarehouseInputDocument_lblWarehouse_Text" xml:space="preserve">
+    <value>انبار ورودی</value>
+  </data>
+  <data name="WarehouseInputDocument_lblWaybill_Text" xml:space="preserve">
+    <value>شماره بارنامه</value>
+  </data>
+  <data name="WarehouseInputDocument_lblAddress_Text" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="WarehouseInputDocument_lblPhone_Text" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalDetailCountTitle_Text" xml:space="preserve">
+    <value>جمع تعداد جزء</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalPackageCountTitle_Text" xml:space="preserve">
+    <value>جمع تعداد بسته</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalUnitCountTitle_Text" xml:space="preserve">
+    <value>جمع تعداد واحد</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalWeightTitle_Text" xml:space="preserve">
+    <value>جمع وزن</value>
+  </data>
+  <data name="ERR_UandP_IS_EMPTY" xml:space="preserve">
+    <value>خطا - نام كاربري و كلمه عبور وارد نشده است</value>
+  </data>
+</root>

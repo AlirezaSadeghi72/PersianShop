@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B9A6CD8-5690-4D13-9F23-CCCA17814A61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Atiran.Main</RootNamespace>
+    <AssemblyName>Atiran</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\Atiran2_3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Atiran.Connections\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\Atiran.Connections\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Dmf.Adapters, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.DmfSqlClrWrapper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Dts.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SQLServer.DTSRuntimeWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=x86">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SQLServer.ManagedDTS, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.CollectorEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.UtilityEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.XEventDbScoped, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.XEventDbScopedEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Management.XEventEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.OlapEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.PipelineHost, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.PolicyEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.RegSvrEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Rmo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ServiceBrokerEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SQLTaskConnectionsWrap, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlWmiManagement, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.TransactSql.ScriptDom, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.WmiEnum, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\Hub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\HubButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\TabBarMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Main\TabBarMenu.resx">
+      <DependentUpon>TabBarMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Atiran.BackupAndRestore\Atiran.BackupAndRestore.csproj">
+      <Project>{182f108c-d93d-41fd-a1f9-ca01aca94bc6}</Project>
+      <Name>Atiran.BackupAndRestore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atiran.Connections\Atiran.Connections.csproj">
+      <Project>{039d942e-1769-41c4-96ea-db8e170a374e}</Project>
+      <Name>Atiran.Connections</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atiran.CustomDocking\Atiran.CustomDocking.csproj">
+      <Project>{8680b98f-c380-42da-9432-96c0e1954d15}</Project>
+      <Name>Atiran.CustomDocking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atiran.Settings\Atiran.Settings.csproj">
+      <Project>{924379a3-cada-4220-9373-ff17ee4c266f}</Project>
+      <Name>Atiran.Settings</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Atiran.UI.WindowsForms\Atiran.UI.WindowsForms.csproj">
+      <Project>{0aed2a5c-6b85-4120-8286-8dad4007fb96}</Project>
+      <Name>Atiran.UI.WindowsForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anbaar_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basic-information_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ems_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-expand-arrow-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expandDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expandleft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hesabdari_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LemonChiffon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximis_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maximis_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimis_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rahyaab_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selling-management_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Selling_Tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sms_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status_online.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasury_tiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atiran2_3.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

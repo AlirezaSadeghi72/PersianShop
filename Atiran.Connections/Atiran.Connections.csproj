@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{039D942E-1769-41C4-96EA-DB8E170A374E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Atiran.Connections</RootNamespace>
+    <AssemblyName>Atiran.Connections</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Z.EntityFramework.Extensions, Version=4.0.63.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Extensions.4.0.63\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AtiranAccModel\AccModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\AccModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\AccModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\AccModelEntities.cs" />
+    <Compile Include="AtiranAccModel\ConnectionInfo.cs" />
+    <Compile Include="AtiranAccModel\Field.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\Form.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\Menu.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\ShortcutKey.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\SubSystem.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\SubSystemPermission.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\User.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\UserFieldPermission.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\UserFormPermission.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\UserPersonalizationForColor.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AtiranAccModel\UserPersonalizationForFont.cs">
+      <DependentUpon>AccModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\AccountingKindEnum.cs" />
+    <Compile Include="Enums\ActsEnum.cs" />
+    <Compile Include="Enums\BackSanadEnum.cs" />
+    <Compile Include="Enums\ControlColorsEnum.cs" />
+    <Compile Include="Enums\ControlNamesEnum.cs" />
+    <Compile Include="Enums\FieIdEnume.cs" />
+    <Compile Include="Enums\GetCheckKharjModeEnum.cs" />
+    <Compile Include="Enums\GoodsKindEnum.cs" />
+    <Compile Include="Enums\GroupSarfaslKind.cs" />
+    <Compile Include="Enums\Overal_SettingEnum.cs" />
+    <Compile Include="Enums\ShortcutKeyEnum.cs" />
+    <Compile Include="Enums\TableChangesEnum.cs" />
+    <Compile Include="Enums\VisitorKind.cs" />
+    <Compile Include="Operaions\BackupOperaion.cs" />
+    <Compile Include="Operaions\FixScreenLag.cs" />
+    <Compile Include="Operaions\FormOp\GetHubForm.cs" />
+    <Compile Include="Operaions\MenuOp\MenuOperaion.cs" />
+    <Compile Include="Operaions\ShortcutKeyOp\HelpOperaion.cs" />
+    <Compile Include="Operaions\SubSystemOp\SubSystemOperaion.cs" />
+    <Compile Include="Operaions\SubSystemPermissionOp\SubSystemPermissionOperaion.cs" />
+    <Compile Include="Operaions\UserFormPermissionOp\FormPermission.cs" />
+    <Compile Include="Operaions\UserOp\GetCurrentSysUser.cs" />
+    <Compile Include="Operaions\UserOp\UserComponent.cs" />
+    <Compile Include="Operaions\UserOp\UserService.cs" />
+    <Compile Include="Operaions\UserPersonalizationOp\UserPersonalizationOperaion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Operaions\DateOp\DateServer.cs" />
+    <Compile Include="Security\Authentication.cs" />
+    <Compile Include="Security\Base\MethodResult.cs" />
+    <Compile Include="Enums\Definitions.cs" />
+    <Compile Include="Security\Helper\Strings.cs" />
+    <Compile Include="Security\Logging\Exception.cs" />
+    <Compile Include="Services\MyTag.cs" />
+    <Compile Include="Security\SecurityResult.cs" />
+    <Compile Include="Services\UsersLineService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Operaions\FieldOp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="AtiranAccModel\AccModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AccModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="AtiranAccModel\AccModel.edmx.diagram">
+      <DependentUpon>AccModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AtiranAccModel\AccModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AccModel.Context.cs</LastGenOutput>
+      <DependentUpon>AccModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="AtiranAccModel\AccModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AccModel.edmx</DependentUpon>
+      <LastGenOutput>AccModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

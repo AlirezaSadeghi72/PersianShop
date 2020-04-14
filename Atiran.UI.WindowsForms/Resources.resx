@@ -1,0 +1,2261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GetCheck_Mab" xml:space="preserve">
+    <value>مبلغ نمي‌تواند صفر باشد</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Settings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DaftareRuznamehInTafsil_lbl_Title_Text" xml:space="preserve">
+    <value>گزارش دفتر روزنامه در سطح تفصیل</value>
+  </data>
+  <data name="ProvinceManagment_lblEProvince_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_State_Text" xml:space="preserve">
+    <value>وضعیت</value>
+  </data>
+  <data name="Selling_Management_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling-Management_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeSallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeSallery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_AddPath_MSG" xml:space="preserve">
+    <value>مسیر مشخص شده به مشتری اختصاص یافت</value>
+  </data>
+  <data name="payChecks_lbl_NumAccountTafsil_Text" xml:space="preserve">
+    <value>کد حساب تفصیلی</value>
+  </data>
+  <data name="WarehouseInputDocument_btnSave_Text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="FinalDocument_DeleteDocument_MSG" xml:space="preserve">
+    <value>سند حذف شد</value>
+  </data>
+  <data name="Document_lblDocNumber_Text" xml:space="preserve">
+    <value>شماره سند</value>
+  </data>
+  <data name="ReportDaftariInTafsil_lbl_FromNum" xml:space="preserve">
+    <value>از شماره سند</value>
+  </data>
+  <data name="EMS_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EMS_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportCheck_lblSerial_Text" xml:space="preserve">
+    <value>سریال</value>
+  </data>
+  <data name="VisitorManagment_BtnEdit_text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="CustomerDefinition_KalagostaranUsernameLenghtInvalid" xml:space="preserve">
+    <value>طول نام كاربري كوتاه است(حداقل 6 كاراكتر)</value>
+  </data>
+  <data name="loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrouhManagement_lblAddGroupCode_Text" xml:space="preserve">
+    <value>کد حساب</value>
+  </data>
+  <data name="Reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_Money_Text" xml:space="preserve">
+    <value>مبلغ</value>
+  </data>
+  <data name="GrouhManagement_ٍERRRepeatAccountCode_MSG" xml:space="preserve">
+    <value>کد حساب تکراری است</value>
+  </data>
+  <data name="MoeinManagement_lblAddKol_Text" xml:space="preserve">
+    <value>زیرمجموعه کل</value>
+  </data>
+  <data name="DaftareRuznamehInTafsil_lbl_FromNum_Text" xml:space="preserve">
+    <value>از شماره سند</value>
+  </data>
+  <data name="ProvinceManagment_BtnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="FinalDocument_SaveDocument_MSG" xml:space="preserve">
+    <value>سند به صورت قطعی ثبت شد</value>
+  </data>
+  <data name="payChecks_lbl_ShomareResid_Text" xml:space="preserve">
+    <value>شماره رسید</value>
+  </data>
+  <data name="MoeinManagement_lblEditName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="RegionManagment_lblRegion_Text" xml:space="preserve">
+    <value>نام منطقه</value>
+  </data>
+  <data name="Document_SaveDocument_MSG" xml:space="preserve">
+    <value>سند ثبت شد</value>
+  </data>
+  <data name="InventoryList__radioInnventoryName_Text" xml:space="preserve">
+    <value>نام کالا</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="debtor_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\debtor_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoacationList_radioRegion_Text" xml:space="preserve">
+    <value>منطقه</value>
+  </data>
+  <data name="visitor_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\visitor-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupManagment_ERREmptyGroupName_MSG" xml:space="preserve">
+    <value>نام گروه را وارد نمایید</value>
+  </data>
+  <data name="MoeinManagement_lblEditKol_Text" xml:space="preserve">
+    <value>زیرمجموعهن کل</value>
+  </data>
+  <data name="Login_Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Login_Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TafsirManagement_QSSSureDelete_MSG" xml:space="preserve">
+    <value>آیا از حذف این مورد اطمینان دارید؟</value>
+  </data>
+  <data name="Background_Settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Settings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ajax-loader.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MsgAdd" xml:space="preserve">
+    <value>ثبت اطلاعات با موفقیت انجام شد</value>
+  </data>
+  <data name="PayChecks_SavePayMoney_MSG" xml:space="preserve">
+    <value>وجه پرداختی با موفقیت در سیستم ثبت شد</value>
+  </data>
+  <data name="MoeinManagement_btnEditCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="SuccessfulRemove" xml:space="preserve">
+    <value>حذف با موفقيت انجام شد</value>
+  </data>
+  <data name="AddImage_Resize" xml:space="preserve">
+    <value>سايز عكس به 400*400 تغيير پيدا كرد</value>
+  </data>
+  <data name="AnbarList_QSSSureAnbar_MSG" xml:space="preserve">
+    <value>آیا از انتخاب انبار مطمئن هستید</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftarMoein_lbl_FromKol_Text" xml:space="preserve">
+    <value>از حساب کل</value>
+  </data>
+  <data name="AccountNumberList_SureAccountNumber_MSG" xml:space="preserve">
+    <value>آیا از انتخاب شماره حساب مطمئن هستید</value>
+  </data>
+  <data name="DaftareRuznamehInMoein_lbl_FromNum_Text" xml:space="preserve">
+    <value>از شماره سند</value>
+  </data>
+  <data name="ProvinceManagment_BtnEdit_Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="DaftareRuznamehInMoein_lbl_Title_Text" xml:space="preserve">
+    <value>گزارش دفتر روزنامه در سطح معین</value>
+  </data>
+  <data name="TarazNamehLevelKol_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="CityManagment_AddCity_MSG" xml:space="preserve">
+    <value>نام شهر را وارد کنید</value>
+  </data>
+  <data name="ERR_USERNAME_IS_EMPTY" xml:space="preserve">
+    <value>خطا - نام کاربری وارد نشده است</value>
+  </data>
+  <data name="ReportSudAndZiyan_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="ShowDocument_lblSumBed_Text" xml:space="preserve">
+    <value>جمع ستون بدهکار</value>
+  </data>
+  <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Backup_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Backup_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryList_QSSSureSelectInventory_MSG" xml:space="preserve">
+    <value>آیا از انتخاب کالاها مطمئن هستید</value>
+  </data>
+  <data name="TafsilManagement_btnSave_Text" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="ReportDaftariInTafsil_lbl_ToNum_Text" xml:space="preserve">
+    <value>تا شماره سند</value>
+  </data>
+  <data name="AnbarDefinition_AlarmMojkavah" xml:space="preserve">
+    <value>در اين انبار كالا موجود است و نمي‌توان آن را حذف كرد</value>
+  </data>
+  <data name="expandDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\expandDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PathManagment_BtnEdit_Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="ProvinceManagment_InsertProvince_MSG" xml:space="preserve">
+    <value>استان جدید اضافه شد</value>
+  </data>
+  <data name="CustomerList_QSSSelectCustomers_MSG" xml:space="preserve">
+    <value>از انتخاب مشتریان مطمئن هستید؟</value>
+  </data>
+  <data name="ExportCheck_ERRINSaveCheckPardakhti_MSG" xml:space="preserve">
+    <value>ثبت اطلاعات با خطا مواجه شد</value>
+  </data>
+  <data name="Hamraah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hamraah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProvinceManagment_BtnAdd_Text" xml:space="preserve">
+    <value>تبت</value>
+  </data>
+  <data name="SalMaliManagement_btnAdd_Text" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="TarazNameInLevelTafsil_lbl_Title_Text" xml:space="preserve">
+    <value>ترازنامه در سطح تفصیل</value>
+  </data>
+  <data name="GroupManagment_BtnDeleteGroup_Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="ImportChecks_lblReciever_Text" xml:space="preserve">
+    <value>گیرنده چک</value>
+  </data>
+  <data name="Background_BasicInformation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background-BasicInformation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeSelling_Management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeSelling-Management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fluid_loader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\fluid-loader.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportSudAndZiyan_lbl_ToValue_Text" xml:space="preserve">
+    <value>موجودی پایان دوره</value>
+  </data>
+  <data name="TafsilManagement_lblSubMoein_Text" xml:space="preserve">
+    <value>زیرمجموعه معین</value>
+  </data>
+  <data name="Max_33px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Max_33px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportChecks_lblBabat_Text" xml:space="preserve">
+    <value>بابت</value>
+  </data>
+  <data name="Background_MngReports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_MngReports.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerGroupDefinition_AddAlarmEmp" xml:space="preserve">
+    <value>نام گروه طرف حساب نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="CustomerList_QSSSureSelectCustomers_MSG" xml:space="preserve">
+    <value>آیا از انتخاب مشتریان مطمئن هستید</value>
+  </data>
+  <data name="PathManagment_lblEProvince_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="RegionManagment_lblRegionManagment_Text" xml:space="preserve">
+    <value>مدیریت مناطق</value>
+  </data>
+  <data name="Hesabdari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hesabdari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityManagment_lblProvince_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="CustomerDefinition_AddCustomerAlarmRep" xml:space="preserve">
+    <value>نام مشتري نمي‌تواند تكراري باشد</value>
+  </data>
+  <data name="save_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GetDataMyBank_lbl_ShobeName_Text" xml:space="preserve">
+    <value>نام شعبه</value>
+  </data>
+  <data name="Tab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Tab.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SarfaslDefinition_AddAlaram_Khali" xml:space="preserve">
+    <value>نام سرفصل نبايد خالي باشد</value>
+  </data>
+  <data name="GrouhManagement_lblEditGroupCode_Text" xml:space="preserve">
+    <value>کدحساب</value>
+  </data>
+  <data name="MasirManagement_QSSSureDelete_MSG" xml:space="preserve">
+    <value>آیا از حذف این مورد اطمینان دارید؟</value>
+  </data>
+  <data name="IRANSans_FaNum__Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IRANSans(FaNum)_Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MasirManagement_cbAddActive_Text" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="TarazNamehLevelKol_lbl_Title_Text" xml:space="preserve">
+    <value>ترازنامه در سطح کل</value>
+  </data>
+  <data name="CheckList_lblFromAccount_Text" xml:space="preserve">
+    <value>از حساب </value>
+  </data>
+  <data name="TopicList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="Background_KalaGostaran_Mng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_KalaGostaran_Mng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportCheck_lblReciever_Text" xml:space="preserve">
+    <value>گیرنده چک</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_lblCustomerCount_Text" xml:space="preserve">
+    <value>تعداد کل مشتریان:</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_DeleteCustomersofPath_MSG" xml:space="preserve">
+    <value>مشتریان از مسیر حذف شدند</value>
+  </data>
+  <data name="InvalidDate" xml:space="preserve">
+    <value>تاريخ وارد شده نامعتبر است.</value>
+  </data>
+  <data name="Document_lblKeys_Text" xml:space="preserve">
+    <value>+ افزودن سطر  |  Del  حذف سطر</value>
+  </data>
+  <data name="DeRahyaab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeRahyaab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RepoetCheckDaryaft_AccountPerson_Text" xml:space="preserve">
+    <value>طرف حساب</value>
+  </data>
+  <data name="MoeinManagement_btnAdd_Text" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="DaftareRuznamehInKol_lbl_ToNum_Text" xml:space="preserve">
+    <value>تا شماره سند</value>
+  </data>
+  <data name="ReportDaftarMoein_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="MasirManagement_lblEditName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="CityManagment_BtnAdd_Text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_lbl_TeadadRooz_Text" xml:space="preserve">
+    <value>تعداد روز:</value>
+  </data>
+  <data name="ProvinceManagment_lblProvince_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="ShowDocument_lblDocNumber_Text" xml:space="preserve">
+    <value>شماره سند:</value>
+  </data>
+  <data name="expandleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\expandleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Backup_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Backup_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_ERRSelectAllFields_MSG" xml:space="preserve">
+    <value>لطفا تمامی فیلدها را انتخاب کنید</value>
+  </data>
+  <data name="LoginForm_btnSignIn_Text" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="ImportChecks_lblTafsilCode_Text" xml:space="preserve">
+    <value>کد حساب تفصیل</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_CodeTafsil" xml:space="preserve">
+    <value>کد حساب تفصیلی</value>
+  </data>
+  <data name="ro_tab_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ro tab bar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitsAndKalaDefinition_AlarmNakaEmp" xml:space="preserve">
+    <value>نام كالا نبايد خالي باشد</value>
+  </data>
+  <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrouhManagement_rdAddTemporary_Text" xml:space="preserve">
+    <value>حساب موقت</value>
+  </data>
+  <data name="ErrorSelectImage" xml:space="preserve">
+    <value>انتخاب عكس با خطا مواجه شد</value>
+  </data>
+  <data name="Anbaar_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Anbaar_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeHesabdari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeHesabdari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERR_USER_IS_LOCKED" xml:space="preserve">
+    <value>خطا - دسترسی این کاربر قفل شده است</value>
+  </data>
+  <data name="undo_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\undo_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_Max_33px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Login_Max_33px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_Max_33px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Login_Max_33px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_QSSCreateDocument_MSG" xml:space="preserve">
+    <value>آیا از صحت اطلاعات سند مطمئن هستید؟</value>
+  </data>
+  <data name="GroupManagment_BtnEditGroup_Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="Back_Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_lblPath_Text" xml:space="preserve">
+    <value>مسیر</value>
+  </data>
+  <data name="InventoryList_radioIncludeName_Text" xml:space="preserve">
+    <value>نام داخل کالا</value>
+  </data>
+  <data name="CityManagment_BtnDelete_Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="DaftareRuznamehInMoein_lbl_ToNum_Text" xml:space="preserve">
+    <value>تا شماره سند</value>
+  </data>
+  <data name="TafsirManagement_ERRRepeatAccountCode_MSG" xml:space="preserve">
+    <value>کد حساب تکراری است</value>
+  </data>
+  <data name="ShowDocumentFromAtiran_lblDate_Text" xml:space="preserve">
+    <value>تاریخ سند:</value>
+  </data>
+  <data name="PathManagment_lblERegion_Text" xml:space="preserve">
+    <value>نام منطقه</value>
+  </data>
+  <data name="WarehouseInputDocument_lblAddress_Text" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="Tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerDefinition_AddCustomerAlarm" xml:space="preserve">
+    <value>نام مشتري نمي‌تواند خالي باشد
+نام مشتري نمي‌تواند تكراري باشد</value>
+  </data>
+  <data name="Anbaar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Anbaar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GetDataMyBank_lbl_BankName_Text" xml:space="preserve">
+    <value>نام بانک</value>
+  </data>
+  <data name="GroupManagment_lblAddGroup_Text" xml:space="preserve">
+    <value>تعریف گروه جدید</value>
+  </data>
+  <data name="MasirManagement_lblAddSalMali_Text" xml:space="preserve">
+    <value>سال مالی</value>
+  </data>
+  <data name="TarazNamehLevelMoein_lbl_FromMoein_Text" xml:space="preserve">
+    <value>از حساب معین</value>
+  </data>
+  <data name="red_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\red-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DaftareRuznamehInKol_lbl_Title_Text" xml:space="preserve">
+    <value>گزارش دفتر روزنامه در سطح کل</value>
+  </data>
+  <data name="FinalDocument_lblDocDesc_Text" xml:space="preserve">
+    <value>شرح سند:</value>
+  </data>
+  <data name="CustomerDefinition_WrongPath" xml:space="preserve">
+    <value>لطفا در وارد كردن شماره مسير دقت نماييد</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalWeightTitle_Text" xml:space="preserve">
+    <value>جمع وزن</value>
+  </data>
+  <data name="PathManagment_ERRepeatPathThisRegion_MSG" xml:space="preserve">
+    <value>مسیر وارد شده در این منطقه وجود دارد</value>
+  </data>
+  <data name="PathManagment_DeletePath_MSG" xml:space="preserve">
+    <value>مسیر حذف شد</value>
+  </data>
+  <data name="CustomerDefinition_KalagostaranUsernameIsExist" xml:space="preserve">
+    <value>نام كاربري تكراري است، لطفا نام ديگري انتخاب نماييد.</value>
+  </data>
+  <data name="LocationList_QSSSureSelect_MSG" xml:space="preserve">
+    <value>ایا از انتخاب مطمئن هستید؟</value>
+  </data>
+  <data name="TarazNameInLevelTafsil_lbl_ToTafsil_Text" xml:space="preserve">
+    <value>تا حساب تفصیل</value>
+  </data>
+  <data name="RegionManagment_ERRExistPathNoDeleteRergion_MSG" xml:space="preserve">
+    <value>در این منطقه مسیر تعیین شده و امکان حذف وجود ندارد</value>
+  </data>
+  <data name="truck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\truck.svg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ImportChecks_lblSerial_Text" xml:space="preserve">
+    <value>سریال چک</value>
+  </data>
+  <data name="HublblSMSMANAGMENT" xml:space="preserve">
+    <value>پيامك</value>
+  </data>
+  <data name="TopicList_radioSubTopic_Text" xml:space="preserve">
+    <value>نام زیرفصل</value>
+  </data>
+  <data name="VisitorGroup_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="CityManagment_BtnEdit_Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="ReportSudAndZiyan_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="PathManagment_lblTitle_Text" xml:space="preserve">
+    <value>مدیریت مسیرها</value>
+  </data>
+  <data name="ReportDaftarKol_lbl_Title_Text" xml:space="preserve">
+    <value>ترازنامه در سطح کل</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_ERRPLZSelectFactor_MSG" xml:space="preserve">
+    <value>لطفا ابتدا فاکتور مورد نظر را جدول انتخاب کنید</value>
+  </data>
+  <data name="InventoryList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="TaraznamehAzmayeshi_lbl_Title_Text" xml:space="preserve">
+    <value>گزارش ترازنامه آزمایشی</value>
+  </data>
+  <data name="TopicList_lblTopicName_Text" xml:space="preserve">
+    <value>نام سرفصل</value>
+  </data>
+  <data name="Close_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportCheck_lblBabat_Text" xml:space="preserve">
+    <value>بابت</value>
+  </data>
+  <data name="AnbarList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="DeBackup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeBackup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckBatchDefinition_AddAlram" xml:space="preserve">
+    <value>لطفا در وارد كردن شماره سريال اولين برگ و تعداد برگ دقت كنيد</value>
+  </data>
+  <data name="PathManagment_ERRCanntDelete_MSG" xml:space="preserve">
+    <value>حذف مسیر امکانپذیر نیست ، برای این مسیر مشتری اختصاص یافته است</value>
+  </data>
+  <data name="HublblHubItemReportingText" xml:space="preserve">
+    <value>گزارشات</value>
+  </data>
+  <data name="GetCheck_Date" xml:space="preserve">
+    <value>تاريخ سررسيد نمي‌تواند كمتر از تاريخ دريافت باشد</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="ReportDaftarTafzili_lbl_FromKol_Text" xml:space="preserve">
+    <value>از حساب کل</value>
+  </data>
+  <data name="Treasury" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Treasury.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waiting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\waiting.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerDefinition_ErrorCity" xml:space="preserve">
+    <value>استان نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="VisitorManagment_BtnDelete_text" xml:space="preserve">
+    <value>حذف از ویزیتور</value>
+  </data>
+  <data name="Information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="376" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\376.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MsgDelete" xml:space="preserve">
+    <value>حذف اطلاعات با موفقیت انجام شد</value>
+  </data>
+  <data name="ShowDocument_lblDocDesc_Text" xml:space="preserve">
+    <value>شرح سند:</value>
+  </data>
+  <data name="MoeinManagement_lblAddGrouh_Text" xml:space="preserve">
+    <value>زیرمجموعه گروه</value>
+  </data>
+  <data name="BankAndShheDefinition_AddBankAlaramEmp" xml:space="preserve">
+    <value>نام بانك نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="yellow_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\yellow_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_Tab_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_Tab_hover.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftarKol_lbl_FromKol_Text" xml:space="preserve">
+    <value>از حساب کل</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TarazNamehLevelKol_lbl_Fromkol_Text" xml:space="preserve">
+    <value>از حساب کل</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalPackageCountTitle_Text" xml:space="preserve">
+    <value>جمع تعداد بسته</value>
+  </data>
+  <data name="ReportDaftarTafzili_lbl_Title_Text" xml:space="preserve">
+    <value>ترازنامه در سطح تفصیل</value>
+  </data>
+  <data name="Login_Close_36px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Login_Close_36px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportCheck_lblPrice_Text" xml:space="preserve">
+    <value>مبلغ</value>
+  </data>
+  <data name="AnbarDefinition_AddAlaramEmp" xml:space="preserve">
+    <value>نام انبار نبايد خالي باشد</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_ERRInDeleteData_MSG" xml:space="preserve">
+    <value>خطا در حذف اطلاعات</value>
+  </data>
+  <data name="RegionManagment_ERRRepeatRegionName_MSG" xml:space="preserve">
+    <value>نام منطقه تکراری است</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_ERRINSaveData_MSG" xml:space="preserve">
+    <value>خطا در ثبت اطلاعات</value>
+  </data>
+  <data name="Background_Selling_Mng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Selling_Mng.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TafsilManagement_lblGrouh_Text" xml:space="preserve">
+    <value>زیرمجموعه گروه</value>
+  </data>
+  <data name="DriverList_QSSSureSelect_MSG" xml:space="preserve">
+    <value>آیا از انتخاب خود مطمئن هستید</value>
+  </data>
+  <data name="RegionManagment_BtnECancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="CustomerGroup_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="HublblHubItemSettingsText" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="Logo_Sadad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Logo_Sadad.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_NumDoc_Text" xml:space="preserve">
+    <value>شماره سند</value>
+  </data>
+  <data name="VisitorDefinition_HaveThisCustomer" xml:space="preserve">
+    <value>نام اين ويزيتور قبلا به عنوان مشتري تعريف شده است</value>
+  </data>
+  <data name="DeEMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeEMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupManagment_BtnECancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="FinalDocument_ERRDocumetNotFlush_MSG" xml:space="preserve">
+    <value>سند تراز نیست</value>
+  </data>
+  <data name="CheckChartGeographySale_lblTitle_Text" xml:space="preserve">
+    <value>بررسی نواحی جغرافیایی فروش</value>
+  </data>
+  <data name="BankList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="Basic_information_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Basic_information_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GetCheck_Shhe" xml:space="preserve">
+    <value>شماره حساب نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="Hesabdari_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hesabdari_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="red_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\red_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Sallery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LineArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LineArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerGroupDefinition_AddAlarmRep" xml:space="preserve">
+    <value>نام گروه طرف حساب نمي‌تواند تكراري باشد</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalUnitCountTitle_Text" xml:space="preserve">
+    <value>جمع تعداد واحد</value>
+  </data>
+  <data name="ImportChecks_lbl_AccountNumber_Text" xml:space="preserve">
+    <value>شماره حساب</value>
+  </data>
+  <data name="DeSettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeSettings.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PathManagment_BtnAdd_Text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="SwitchUsers_58px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SwitchUsers_58px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Document_ERRDocumentNotFlush_MSG" xml:space="preserve">
+    <value>سند تراز نیست</value>
+  </data>
+  <data name="orange_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\orange_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TafsilManagement_btnDelete_Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Tab_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Tab_23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SMS_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SMS_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportSudAndZiyan_lbl_Title_Text" xml:space="preserve">
+    <value>گزارش سود و زیان</value>
+  </data>
+  <data name="cut_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cut_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VisitorGroup_QSSSureofSelectVisitor_MSG" xml:space="preserve">
+    <value>آیا از انتخاب ویزیتور مطمئن هستید</value>
+  </data>
+  <data name="HublblHubItemTreasuryText" xml:space="preserve">
+    <value>خزانه داري</value>
+  </data>
+  <data name="ReportDaftariINKOl_lbl_ToNum_Text" xml:space="preserve">
+    <value>تا شماره سند</value>
+  </data>
+  <data name="GroupManagment_ERREditGroup_MSG" xml:space="preserve">
+    <value>در این گروه کالا به ثبت رسیده است</value>
+  </data>
+  <data name="CheckList_ERRInInsertDasteCheck_MSG" xml:space="preserve">
+    <value>تعداد برگ های این دسته چک تمام نشده است</value>
+  </data>
+  <data name="default_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\default_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarehouseInputDocument_lblCustomer_Text" xml:space="preserve">
+    <value>آقای / شرکت</value>
+  </data>
+  <data name="ReportDaftariInMoein_lbl_ToNum_Text" xml:space="preserve">
+    <value>تا شماره سند</value>
+  </data>
+  <data name="GroupManagment_BtnAddGroup_Text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="GetCheck_NoShhe" xml:space="preserve">
+    <value>هيچ شماره حسابي وجود ندارد</value>
+  </data>
+  <data name="Selling_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftarTafzili_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="DeKalaGostaranPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeKalaGostaranPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PathManagment_AddPath_MSG" xml:space="preserve">
+    <value>مسیر با موفقیت اضافه شد</value>
+  </data>
+  <data name="plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckList_InsertDasteCheck_MSG" xml:space="preserve">
+    <value>چک با موفقیت ثبت شد</value>
+  </data>
+  <data name="ProvinceManagment_EditProvince_MSG" xml:space="preserve">
+    <value>استان مورد نظر ویرایش شد</value>
+  </data>
+  <data name="Atiran_Spotlight_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Atiran_Spotlight_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PathManagment_BtnECancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="GrouhManagement_btnAdd_Text" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_lbl_Name_Text" xml:space="preserve">
+    <value>نام:</value>
+  </data>
+  <data name="RegionManagment_DeleteRergion_MSG" xml:space="preserve">
+    <value>منطقه حذف شد</value>
+  </data>
+  <data name="SalMaliManagement_lblEditForm_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="ReportDaftarMoein_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="DeHamraah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeHamraah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\paste_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hamraah_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hamraah_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZirSarfaslDefinition_AlarmEmp" xml:space="preserve">
+    <value>نام زير سرفصل نبايد خالي باشد</value>
+  </data>
+  <data name="AccountList_lblCodeShobe_Text" xml:space="preserve">
+    <value>کد شعبه</value>
+  </data>
+  <data name="RegionManagment_lblEProvince_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="HublblHubItemKalaGostaranText" xml:space="preserve">
+    <value>كالا گستران</value>
+  </data>
+  <data name="Sms_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Sms_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserList_QSSSureSelect_MSG" xml:space="preserve">
+    <value>آیا از انتخاب کاربر مطمئن هستید</value>
+  </data>
+  <data name="UnitsAndKalaDefinition_AlarmCokaEmp" xml:space="preserve">
+    <value>كد كالا نبايد خالي باشد</value>
+  </data>
+  <data name="Selling_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mix_39px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mix_39px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TopicList_QSSSureSelect_MSG" xml:space="preserve">
+    <value>ایا از انتخاب مطمئن هستید؟</value>
+  </data>
+  <data name="Atiran_Spotlight_Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Atiran_Spotlight_Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payChecks_lbl_Unit_Text" xml:space="preserve">
+    <value>ریال</value>
+  </data>
+  <data name="ImportChecks_lblBankName_Text" xml:space="preserve">
+    <value>نام بانک</value>
+  </data>
+  <data name="ExportCheck_lblDateDocument_Text" xml:space="preserve">
+    <value>تاریخ سند</value>
+  </data>
+  <data name="VisitorManagment_BtnAdd_text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDescription_Text" xml:space="preserve">
+    <value>شرح</value>
+  </data>
+  <data name="ProvinceManagment_tnECancell_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="Actions_arrow_left_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Actions-arrow-left-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ErrorRemove" xml:space="preserve">
+    <value>حذف با خطا مواجه شد</value>
+  </data>
+  <data name="GroupManagment_lblHeadGroup_Text" xml:space="preserve">
+    <value>سرگروه</value>
+  </data>
+  <data name="ReportDaftarKol_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="TafsilManagement_btnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DriverList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="CityManagment_lblCity_Text" xml:space="preserve">
+    <value>نام شهر</value>
+  </data>
+  <data name="ExportCheck_lblPayTo_Text" xml:space="preserve">
+    <value>در وجه</value>
+  </data>
+  <data name="CustomerDefinition_ErrorPath" xml:space="preserve">
+    <value>منطقه نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="Colors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Colors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_ERRInEditData_MSG" xml:space="preserve">
+    <value>خطا در ویرایش اطلاعات</value>
+  </data>
+  <data name="PathManagment_lblECity_Text" xml:space="preserve">
+    <value>نام شهر</value>
+  </data>
+  <data name="Basic_Information" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Basic-InformationH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShowDocumentFromAtiran_lblDocDesc_Text" xml:space="preserve">
+    <value>شرح سند:</value>
+  </data>
+  <data name="Selling_management_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling_management_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlurTag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BlurTag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERR_SUPERVISOR_LOOP" xml:space="preserve">
+    <value>خطا - سوپروایز نمیتواند سوپروایزر خودش شود</value>
+  </data>
+  <data name="Car" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Car.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DaftareRuznamehInTafsil_lbl_ToNum_Text" xml:space="preserve">
+    <value>تا شماره سند</value>
+  </data>
+  <data name="MasirManagement_cbEditlsMain_Text" xml:space="preserve">
+    <value>مسیر</value>
+  </data>
+  <data name="VisitorDefinition_AddAlaram" xml:space="preserve">
+    <value>نام پرسنل فروش نبايد تكراري باشد
+نام پرسنل فروش نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="Background_Reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Reports.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalMaliManagement_btnEditCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="GrouhManagement_lblAddName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="RegionManagment_BtnAdd_Text" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="user_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\user_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDate_Text" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="Pedro_luis_romani_ruiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Pedro_luis_romani_ruiz.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportCheck_lblTitle_Text" xml:space="preserve">
+    <value>چک های پرداختی</value>
+  </data>
+  <data name="TafsilManagement_lblName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportChecks_lblDateDocument_Text" xml:space="preserve">
+    <value>تاریخ سند</value>
+  </data>
+  <data name="Sort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Sort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarehouseInputDocument_lblWarehouse_Text" xml:space="preserve">
+    <value>انبار ورودی</value>
+  </data>
+  <data name="PathManagment_lblRegion_Text" xml:space="preserve">
+    <value>نام منطقه</value>
+  </data>
+  <data name="AddImage_Error" xml:space="preserve">
+    <value>سايز عكس بايد حداكثر 400 * 400 باشد</value>
+  </data>
+  <data name="GroupManagment_lblCanNegative_Text" xml:space="preserve">
+    <value>آیا موجودی کالای این گروه میتواند منفی باشد؟</value>
+  </data>
+  <data name="ReportDaftarTafzili_lbl_FromMoein_Text" xml:space="preserve">
+    <value>از حساب معین</value>
+  </data>
+  <data name="ReportDaftarTafzili_lbl_FromTafsil_Text" xml:space="preserve">
+    <value>از حساب تفصیل</value>
+  </data>
+  <data name="SalMaliManagement_lblAddTo_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="MoeinManagement_lblEditroup_Text" xml:space="preserve">
+    <value>زیرمجموعه گروه</value>
+  </data>
+  <data name="GrouhManagement_btnSave_Text" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="CustomerList_radioTell_Text" xml:space="preserve">
+    <value>شماره تلفن</value>
+  </data>
+  <data name="TafsilManagement_lblTafsilCode_Text" xml:space="preserve">
+    <value>کد</value>
+  </data>
+  <data name="ERR_FEILD_REQUIRED" xml:space="preserve">
+    <value>خطا - لطفا تمامی فیلدها را پر کنید</value>
+  </data>
+  <data name="red_circle_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\red-circle_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalMaliManagement_btnAddCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="CheckBatchDefinition_RightValue" xml:space="preserve">
+    <value>حساب جاري نمي‌تواند خالي باشد
+تعداد برگ و شماره سريال اولين برگ نبايد صفر باشند</value>
+  </data>
+  <data name="CustomerGroup_QSSSureSelectGroup_MSG" xml:space="preserve">
+    <value>آیا از انتخاب گروه مطمئن هستید</value>
+  </data>
+  <data name="OfficeAgentList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="Close_Tab_hover_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_Tab_hover_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TarazNamehLevelKol_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="save_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\save_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PopUp_Pointer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PopUp_Pointer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TarazNamehLevelMoein_lbl_ToMoein_Text" xml:space="preserve">
+    <value>تا حساب معین</value>
+  </data>
+  <data name="CustomerDefinition_WrongCode" xml:space="preserve">
+    <value>كد مشتري نمي‌تواند خالي يا تكراري باشد</value>
+  </data>
+  <data name="ProvinceManagment_BtnDelete_Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="WorkerDefinition_AddAlaram" xml:space="preserve">
+    <value>نام كارگر نبايد تكراري باشد
+نام كارگر نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="Document_PLZInsertDescriptionOfDocument_MSG" xml:space="preserve">
+    <value>لطفا شرح سند را وارد نمایید</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_Title_Text" xml:space="preserve">
+    <value>چک های دریافتی</value>
+  </data>
+  <data name="Rahyaab_Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rahyaab_Stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_lbl_Search_Text" xml:space="preserve">
+    <value>جستجوی نام:</value>
+  </data>
+  <data name="GroupManagment_radioYes_Text" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="GroupManagment_radioNo_Text" xml:space="preserve">
+    <value>خیر</value>
+  </data>
+  <data name="EMS_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\EMS_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegionManagment_lblERegion_Text" xml:space="preserve">
+    <value>نام منطقه</value>
+  </data>
+  <data name="ClaimsAgentList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="Rahyaab_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rahyaab_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoacationList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="Close_Tab_30px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_Tab_30px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ems_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Ems_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KalaGostaranPic_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KalaGostaranPic_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftarKol_lbl_ToKol_Text" xml:space="preserve">
+    <value>تا حساب کل</value>
+  </data>
+  <data name="MasirManagement_btnSave_Text" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="RegionManagment_InsertRegion_MSG" xml:space="preserve">
+    <value>منطقه با موفقیت اضافه شد</value>
+  </data>
+  <data name="PathManagment_lblProvine_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AccountList_AddAccount_MSG" xml:space="preserve">
+    <value>حساب ثبت شد</value>
+  </data>
+  <data name="PathManagment_lblPath_Text" xml:space="preserve">
+    <value>نام مسیر</value>
+  </data>
+  <data name="MsgEmptyField" xml:space="preserve">
+    <value>این فیلد نمیتواند خالی باشد</value>
+  </data>
+  <data name="Settings_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Settings_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TarazNameInLevelTafsil_lbl_FromTafsil_Text" xml:space="preserve">
+    <value>از حساب تفصیل</value>
+  </data>
+  <data name="Login_Min_39px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Login_Min_39px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrouhManagement_rbEditTemporary_Text" xml:space="preserve">
+    <value>حساب موقت</value>
+  </data>
+  <data name="redo_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\redo_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AccountList_lblAcountType_Text" xml:space="preserve">
+    <value>نام حساب</value>
+  </data>
+  <data name="RegionManagment_lblCity_Text" xml:space="preserve">
+    <value>نام شهر</value>
+  </data>
+  <data name="RegionManagment_ERRInsertRegionName_MSG" xml:space="preserve">
+    <value>نام منطقه را وارد کنید</value>
+  </data>
+  <data name="broom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\broom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background_Mobile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Mobile.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportChecks_lblShobeName_Text" xml:space="preserve">
+    <value>نام شعبه</value>
+  </data>
+  <data name="Background_Inventory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Inventory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftarMoein_lbl_ToMoein_Text" xml:space="preserve">
+    <value>تا حساب معین</value>
+  </data>
+  <data name="AccountList_lblAccount_Text" xml:space="preserve">
+    <value>شماره حساب</value>
+  </data>
+  <data name="blue_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\blue_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoeinManagement_btnCancelAdd_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="BackSpace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\BackSpace.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerDefinition_CodeEmp" xml:space="preserve">
+    <value>كد مشتري نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImportChecks_lblPrice_Text" xml:space="preserve">
+    <value>مبلغ</value>
+  </data>
+  <data name="Background_Treasury" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Treasury.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IRANSans_FaNum_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IRANSans(FaNum).ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Reports_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reports_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_Hub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_Hub.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payChecks_lbl_NumCheck_Text" xml:space="preserve">
+    <value>ثبت چک در سند شماره</value>
+  </data>
+  <data name="MasirManagement_cbEditActive_Text" xml:space="preserve">
+    <value>فعال</value>
+  </data>
+  <data name="VisitorManagment_BtnCancel_text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="DeSelling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeSelling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thumbs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Thumbs.db;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MoeinManagement_lblEditMoeinCode_Text" xml:space="preserve">
+    <value>کدحساب</value>
+  </data>
+  <data name="ExportCheck_lblDocumetCount_Text" xml:space="preserve">
+    <value>ثبت چک در شماره سند</value>
+  </data>
+  <data name="AccountList_lblBankName_Text" xml:space="preserve">
+    <value>نام بانک</value>
+  </data>
+  <data name="sort_down_green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sort_down_green.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SuccessfulConfirm" xml:space="preserve">
+    <value>ثبت با موفقيت انجام شد</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_ERREmptyPathOfCustomer_MSG" xml:space="preserve">
+    <value>مشتری ای برای حذف انتخاب نشده است</value>
+  </data>
+  <data name="LoacationList_lblRegion_Text" xml:space="preserve">
+    <value>نام منطقه</value>
+  </data>
+  <data name="ErrorConfirm" xml:space="preserve">
+    <value>ثبت با خطا مواجه شد</value>
+  </data>
+  <data name="LoacationList_lblCityName_Text" xml:space="preserve">
+    <value>نام شهر</value>
+  </data>
+  <data name="ShowDocument_lblSumBes_Text" xml:space="preserve">
+    <value>جمع ستون بستانکار</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_lblRegion_Text" xml:space="preserve">
+    <value>منطقه</value>
+  </data>
+  <data name="DeSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeSMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckList_lblFromSerial_Text" xml:space="preserve">
+    <value>از سریال</value>
+  </data>
+  <data name="ZirSarfaslDefinition_AlarmRep" xml:space="preserve">
+    <value>نام زير سرفصل نبايد تكراري باشد</value>
+  </data>
+  <data name="Close_Tab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_Tab.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HublblHubItemSalesManagementText" xml:space="preserve">
+    <value>برنامه ريزي فروش</value>
+  </data>
+  <data name="HublblHubItemBackupAndRestoreText" xml:space="preserve">
+    <value>پشتیبان گیری</value>
+  </data>
+  <data name="GroupManagment_EditGroup_MSG" xml:space="preserve">
+    <value>گروه مورد نظر ویرایش شد</value>
+  </data>
+  <data name="Close_36px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_36px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LoginForm_lblPassword_Text" xml:space="preserve">
+    <value>کلمه عبور</value>
+  </data>
+  <data name="Basic_Information_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Basic-Information_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PutCheck_ShPutChk" xml:space="preserve">
+    <value>اين شماره سريال با اين تاريخ سررسيد قبلا تعريف شده است</value>
+  </data>
+  <data name="RegionManagment_ERRNeedInsertNameRergion_MSG" xml:space="preserve">
+    <value>نام منطقه را وارد نمایید</value>
+  </data>
+  <data name="TafsilManagement_btnEdit_Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="ImportChecks_lbl_ShobeCode_Text" xml:space="preserve">
+    <value>کد شعبه</value>
+  </data>
+  <data name="status_online" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\status_online.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PathManagment_ERREmptyNameofPath_MSG" xml:space="preserve">
+    <value>نام مسیر را وارد نمایید</value>
+  </data>
+  <data name="ImportChecks_lblDate_Text" xml:space="preserve">
+    <value>تاریخ دریافت</value>
+  </data>
+  <data name="Home_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Home_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background_Sallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Sallery.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_Tab_30px1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_Tab_30px.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalMaliManagement_lblEditTo_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="ImportChecks_lbl_Title_Text" xml:space="preserve">
+    <value>چک های دریافتی</value>
+  </data>
+  <data name="Reports_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reports_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityMangment_ERRAddSameNameCity_MSG" xml:space="preserve">
+    <value>شهر شما در استان انتخابی موجود است</value>
+  </data>
+  <data name="Reports_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Reports_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MsgErrorWhenDelete" xml:space="preserve">
+    <value>خطا در حذف اطلاعات </value>
+  </data>
+  <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProvinceManagment_DeleteProvince_MSG" xml:space="preserve">
+    <value>استان مورد نظر حذف شد</value>
+  </data>
+  <data name="AnbarDefinition_AddAlaramRep" xml:space="preserve">
+    <value>نام انبار نمي‌تواند تكراري باشد</value>
+  </data>
+  <data name="PathManagment_BtnDelete_Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="MasirManagement_cbAddlsMain_Text" xml:space="preserve">
+    <value>مسیر</value>
+  </data>
+  <data name="FinalDocument_lblSumBed_Text" xml:space="preserve">
+    <value>جمع ستون بدهکار</value>
+  </data>
+  <data name="Background_Backup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Backup.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rahyaab_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rahyaab_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\green_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AssignedToTrackVisitorService_ERRin Table Customer NotExist This Path_MSG" xml:space="preserve">
+    <value>مسیر انتخاب شده برای مشتری اختصاص نیافته است</value>
+  </data>
+  <data name="BankAndShheDefinition_AddBankAlaramRep" xml:space="preserve">
+    <value>نام بانك نمي‌تواند تكراري باشد</value>
+  </data>
+  <data name="Login_Min_39px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Login_Min_39px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegionManagment_BtnDelete_Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="CustomerDefinition_KalagostaranPasswordLenghtInvalid" xml:space="preserve">
+    <value>طول كلمه عبور كوتاه است(حداقل 6 كاراكتر)</value>
+  </data>
+  <data name="BankList_QSSSureBank_MSG" xml:space="preserve">
+    <value>آیا از انتخاب بانک مطمئن هستید</value>
+  </data>
+  <data name="HublblHubItemWarehouseText" xml:space="preserve">
+    <value>انبار</value>
+  </data>
+  <data name="PayChecks_ERRInSavePayMoney_MSG" xml:space="preserve">
+    <value>ثبت اطلاعات با خطا مواجه شد</value>
+  </data>
+  <data name="TarazNamehLevelMoein_lbl_FromKol_Text" xml:space="preserve">
+    <value>از حساب کل</value>
+  </data>
+  <data name="MultiLines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\MultiLines.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anbaar_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Anbaar_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProvinceManagment_ERRRepeateNameProvince_MSG" xml:space="preserve">
+    <value>نام واردشده تکراری است</value>
+  </data>
+  <data name="ImportChecks_lblState_Text" xml:space="preserve">
+    <value>وضعیت</value>
+  </data>
+  <data name="ReportDaftarKol_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="TarazNamehLevelMoein_lbl_Title_Text" xml:space="preserve">
+    <value>ترازنامه در سطح معین</value>
+  </data>
+  <data name="ReportDaftariInTafsil_lbl_Title_Text" xml:space="preserve">
+    <value>گزارش دفتری در سطح تفصیل</value>
+  </data>
+  <data name="LoacationList_radioPath_Text" xml:space="preserve">
+    <value>مسیر</value>
+  </data>
+  <data name="FinalDocument_QSSDeleteDocument_MSG" xml:space="preserve">
+    <value>آیا از حذف سند مطمئن هستید ?</value>
+  </data>
+  <data name="SalMaliManagement_lblEditCompany_Text" xml:space="preserve">
+    <value>شرکت</value>
+  </data>
+  <data name="animated_loading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\animated-loading.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Max_33px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Max_33px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VisitorDefinition_AddAlaramEmp" xml:space="preserve">
+    <value>نام پرسنل فروش نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="RegionManagment_BtnEdit_Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="ERR_PASSWORD_IS_NOT_CORRECT" xml:space="preserve">
+    <value>خطا - کلمه عبور اشتباه است</value>
+  </data>
+  <data name="OfficeAgentList_QSSSureSelect_MSG" xml:space="preserve">
+    <value>آیا از انتخاب خود مطمئن هستید</value>
+  </data>
+  <data name="TafsilManagement_lblMoein_Text" xml:space="preserve">
+    <value>زیرمجموعه کل</value>
+  </data>
+  <data name="LoacationList_lblProvinceName_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="MoeinManagement_lblAddName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Colors_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Colors_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERR_USER_NOT_EXISTS" xml:space="preserve">
+    <value>خطا - کاربری با این نام کاربری وجود ندارد</value>
+  </data>
+  <data name="payChecks_lbl_AccountPerson_Text" xml:space="preserve">
+    <value>طرف حساب</value>
+  </data>
+  <data name="ShowDocumentFromAtiran_lblDocNumber_Text" xml:space="preserve">
+    <value>شماره سند:</value>
+  </data>
+  <data name="CityManagment_lblCityName_Text" xml:space="preserve">
+    <value>نام شهر</value>
+  </data>
+  <data name="Settings_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Settings_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalMaliManagement_btnSave_Text" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="ProvinceManagment_ERRExistNameProvince_MSG" xml:space="preserve">
+    <value>نام استان قبلا به ثبت رسیده نام دیگری برگزینید</value>
+  </data>
+  <data name="cut_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\cut_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PathManagment_ERRExistPathThisRegion_MSG" xml:space="preserve">
+    <value>مسیر وارد شده در این منطقه وجود دارد</value>
+  </data>
+  <data name="PathManagment_ERRClickForEditNameofPath_MSG" xml:space="preserve">
+    <value>برای ویرایش مسیر روی نام مسیر کلیک کنید</value>
+  </data>
+  <data name="ADD_VISITOR_TO_SUPERVISOR" xml:space="preserve">
+    <value>ویزیتور به سوپروایزر اضافه شد</value>
+  </data>
+  <data name="MoeinManagement_lblAddMoeinCode_Text" xml:space="preserve">
+    <value>کد حساب</value>
+  </data>
+  <data name="CustomerList_radioCustomerName_Text" xml:space="preserve">
+    <value>نام مشتری</value>
+  </data>
+  <data name="Selling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupManagment_DeleteGroup_MSG" xml:space="preserve">
+    <value>گروه مورد نظر حذف شد</value>
+  </data>
+  <data name="Login_Close_36px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Login_Close_36px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDocNo_Text" xml:space="preserve">
+    <value>شماره سند</value>
+  </data>
+  <data name="KalaGostaranPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KalaGostaranPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoeinManagement_QSSSureDelete_MSG" xml:space="preserve">
+    <value>آیا از حذف این مورد اطمینان دارید؟</value>
+  </data>
+  <data name="MasirManagement_lblEditSalMali_Text" xml:space="preserve">
+    <value>سال مالی</value>
+  </data>
+  <data name="GrouhManagement_btnDelete_Text" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="DistributionAgentList_QSSSureSelect_MSG" xml:space="preserve">
+    <value>آیا از انتخاب خود مطمئن هستید</value>
+  </data>
+  <data name="SuccessfulEdit" xml:space="preserve">
+    <value>ويرايش با موفقيت انجام شد</value>
+  </data>
+  <data name="payChecks_lbl_Babat_Text" xml:space="preserve">
+    <value>بابت</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_BtnAdd_Text" xml:space="preserve">
+    <value>تخصیص مشتری به مسیر</value>
+  </data>
+  <data name="Selling_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportSudAndZiyan_lbl_fromValue_Text" xml:space="preserve">
+    <value>موجودی اول دوره</value>
+  </data>
+  <data name="SMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Purple_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Purple_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VisitorDefinition_AddAlaramRep" xml:space="preserve">
+    <value>نام پرسنل فروش نبايد تكراري باشد</value>
+  </data>
+  <data name="REMOVE_VISITOR_FROM_SUPERVISOR" xml:space="preserve">
+    <value>ویزیتور از سوپروایزر حذف شد</value>
+  </data>
+  <data name="ImportChecks_lblDocumentCount_Text" xml:space="preserve">
+    <value>ثبت چک در شماره سند</value>
+  </data>
+  <data name="IRANSans_FaNum__Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IRANSans(FaNum)_Medium.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LoginForm_lblUsername_Text" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="WarehouseInputDocument_btnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="LoginForm_lblFiscalYear_Text" xml:space="preserve">
+    <value>سال مالی</value>
+  </data>
+  <data name="payChecks_lbl_TahvilDahandeh_Text" xml:space="preserve">
+    <value>تحویل دهنده (اختیاری)</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_lbl_EditName_Text" xml:space="preserve">
+    <value>نام:</value>
+  </data>
+  <data name="GrouhManagement_ٍQSSSureDelete_MSG" xml:space="preserve">
+    <value>آیا از حذف این مورد اطمینان دارید؟</value>
+  </data>
+  <data name="AccountList_lblShobe_Text" xml:space="preserve">
+    <value>نام شعبه</value>
+  </data>
+  <data name="payChecks_lbl_DocDate_Text" xml:space="preserve">
+    <value>تاریخ سند</value>
+  </data>
+  <data name="green_circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\green-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerDefinition_AddCustomerAlarmEmp" xml:space="preserve">
+    <value>نام مشتري نميتواند خالي باشد</value>
+  </data>
+  <data name="ReportDaftariInMoein_lbl_Title_Text" xml:space="preserve">
+    <value>گزارش دفتری در سطح معین</value>
+  </data>
+  <data name="ReportDaftarTafzili_lbl_ToTafsil_Text" xml:space="preserve">
+    <value>تا حساب تفصیل</value>
+  </data>
+  <data name="CustomerDefinition_AccType" xml:space="preserve">
+    <value>كاربر محترم امكان تغيير گروه معامل به دليل مغايرت در نوع گروه انتخابي وجود ندارد</value>
+  </data>
+  <data name="ImportChecks_SaveCheckDaryafti_MSG" xml:space="preserve">
+    <value>چک دریافتی با موفقیت در سیستم ثبت شد</value>
+  </data>
+  <data name="CustomerDefinition_SHIMEmp" xml:space="preserve">
+    <value>شماره در مسير نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="CustomerDefinition_KalagostaranPasswordEmpty" xml:space="preserve">
+    <value>كلمه عبور نميتواند خالي باشد</value>
+  </data>
+  <data name="HublblHubItemRahyabText" xml:space="preserve">
+    <value>سفارش گیر برخط - رهیاب</value>
+  </data>
+  <data name="WarehouseInputDocument_lblPhone_Text" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="HublblHubItemEMSText" xml:space="preserve">
+    <value>مدیریت ارتباط با مشتري</value>
+  </data>
+  <data name="DeModiriat_Reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeModiriat-Reports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarehouseInputDocument_lblDocType_Text" xml:space="preserve">
+    <value>نوع سند</value>
+  </data>
+  <data name="ShowDocument_lblDate_Text" xml:space="preserve">
+    <value>تاریخ سند:</value>
+  </data>
+  <data name="GrouhManagement_btnCancelEdit_Text" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="HublblHubItemBasicInformationText" xml:space="preserve">
+    <value>اطلاعات پايه</value>
+  </data>
+  <data name="ProvinceManagment_ERRExistCityThisProvince_MSG" xml:space="preserve">
+    <value>ر این استان شهر به ثبت رسیده است و امکان حذف وجود ندارد</value>
+  </data>
+  <data name="payChecks_lbl_Money_Text" xml:space="preserve">
+    <value>مبلغ</value>
+  </data>
+  <data name="ReportDaftariINKOl_lbl_FromNum_Text" xml:space="preserve">
+    <value>از شماره سند</value>
+  </data>
+  <data name="PathManagment_EditPath_MSG" xml:space="preserve">
+    <value>مسیر ویرایش شد</value>
+  </data>
+  <data name="Document_lblDate_Text" xml:space="preserve">
+    <value>تاریخ سند</value>
+  </data>
+  <data name="ReportDaftariINKOl_lbl_Tiltle_Text" xml:space="preserve">
+    <value>گزارش دفتری در سطح کل</value>
+  </data>
+  <data name="ImportChecks_ERRInSaveCheckDaryafti_MSG" xml:space="preserve">
+    <value>ثبت اطلاعات با خطا مواجه شد</value>
+  </data>
+  <data name="AccountNumberList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="TarazNameInLevelTafsil_lbl_FromKol_Text" xml:space="preserve">
+    <value>از حساب کل</value>
+  </data>
+  <data name="Background_EMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_EMS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupManagment_AddGroup_MSG" xml:space="preserve">
+    <value>گروه جدید اضافه شد</value>
+  </data>
+  <data name="RegionManagment_lblECity_Text" xml:space="preserve">
+    <value>نام شهر</value>
+  </data>
+  <data name="MoeinManagement_ERRRepeatAccountCode_MSG" xml:space="preserve">
+    <value>کد حساب تکراری است</value>
+  </data>
+  <data name="DeReports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeReports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityManagment_BtnECancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="Home_36px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Home_36px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DistributionAgentList_checkBoxSelectAll_Text" xml:space="preserve">
+    <value>انتخاب همه</value>
+  </data>
+  <data name="IRANSans_FaNum__Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IRANSans(FaNum)_Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SalMaliManagement_lblAddForm_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="VisitorManagment_lblSupervisor_text" xml:space="preserve">
+    <value>نام سوپروایزر</value>
+  </data>
+  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityManagment_lblProvinceName_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="RegionManagment_BtnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="AccountList_lblTafsil_Text" xml:space="preserve">
+    <value>کد حساب تفصیلی</value>
+  </data>
+  <data name="VisitorManagment_lblCountSailesTeam_text" xml:space="preserve">
+    <value>تعداد تیم فروش</value>
+  </data>
+  <data name="AccountList_lblAddress_Text" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="GrouhManagement_rdEditPermanent_Text" xml:space="preserve">
+    <value>حساب دائم</value>
+  </data>
+  <data name="AccountList_lblTell_Text" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="No_Internet_Connection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\No-Internet-Connection.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerDefinition_ErrorCmbs" xml:space="preserve">
+    <value>شهر، منطقه و مسير را از داخل ليست انتخاب كنيد</value>
+  </data>
+  <data name="WorkerDefinition_AddAlaramEmp" xml:space="preserve">
+    <value>نام كارگر نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_lblTitle_Text" xml:space="preserve">
+    <value>تخصیص مشتریان به مسیر</value>
+  </data>
+  <data name="MsgEdit" xml:space="preserve">
+    <value>ویرایش اطلاعات با موفقیت انجام شد</value>
+  </data>
+  <data name="ProvinceManagment_GroupProvince_Text" xml:space="preserve">
+    <value>لیست استان ها</value>
+  </data>
+  <data name="Hesabdari_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hesabdari_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SalMaliManagement_lblEditName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="KolManagement_ERRRepeatAccountCode_MSG" xml:space="preserve">
+    <value>کد حساب تکراری است</value>
+  </data>
+  <data name="DeleteQuestion" xml:space="preserve">
+    <value>آيا از حذف اطمينان داريد؟</value>
+  </data>
+  <data name="WarehouseInputDocument_lblAtiranDocNo_Text" xml:space="preserve">
+    <value>شماره سند آتیران</value>
+  </data>
+  <data name="Alarm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Alarm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="anbaar_tiny_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\anbaar_tiny_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SarfaslDefinition_AddAlaram_Tekrari" xml:space="preserve">
+    <value>نام سرفصل نبايد تكراري باشد</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_lblProvince_Text" xml:space="preserve">
+    <value>استان</value>
+  </data>
+  <data name="MasirManagement_btnEditCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="green_circle_s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\green-circle_s.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftariInMoein_lbl_FromNum_Text" xml:space="preserve">
+    <value>از شماره سند</value>
+  </data>
+  <data name="CityManagment_EditCity_MSG" xml:space="preserve">
+    <value>شهر مورد نظر ویرایش شد</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_lblCity_Text" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="Background_SMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_SMS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftarMoein_lbl_Title_Text" xml:space="preserve">
+    <value>ترازنامه در سطح معین</value>
+  </data>
+  <data name="SMS_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\SMS_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegionManagment_lblProvince_Text" xml:space="preserve">
+    <value>نام استان</value>
+  </data>
+  <data name="CustomerDefinition_SHIMRep" xml:space="preserve">
+    <value>شماره در مسير نمي‌تواند تكراري باشد</value>
+  </data>
+  <data name="CheckList_lblCountOfCheck_Text" xml:space="preserve">
+    <value>تعداد برگ چک</value>
+  </data>
+  <data name="Document_DocNumberChanged_MSG" xml:space="preserve">
+    <value>شماره سند با توجه به ثبت سند از جانب کاربر دیگر تغییر کرد. شماره سند :</value>
+  </data>
+  <data name="VisitorDefinition_NoSupervisor" xml:space="preserve">
+    <value>هيچ سوپروايزري تعريف نشده است</value>
+  </data>
+  <data name="LemonChiffon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\LemonChiffon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityManagment_BtnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="TarazNamehLevelMoein_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="ExportCheck_lblDate_Text" xml:space="preserve">
+    <value>تاریخ</value>
+  </data>
+  <data name="ProvinceManagment_ERRInsertProvinceName_MSG" xml:space="preserve">
+    <value>نام استان را وارد نمایید</value>
+  </data>
+  <data name="CustomerDefinition_KalagostaranUsernameEmpty" xml:space="preserve">
+    <value>نام كاربري نميتواند خالي باشد</value>
+  </data>
+  <data name="GroupManagment_ERRRepeatGroupName_MSG" xml:space="preserve">
+    <value>نام گروه تکراری است</value>
+  </data>
+  <data name="ImportChecks_lblFromCheck_Text" xml:space="preserve">
+    <value>از شماره حساب</value>
+  </data>
+  <data name="CustomerList_radioAddress_Text" xml:space="preserve">
+    <value>آدرس</value>
+  </data>
+  <data name="Background_Rahyaab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Rahyaab.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerDefinition_CodeRep" xml:space="preserve">
+    <value>كد مشتري نبايد تكراري باشد</value>
+  </data>
+  <data name="MoeinManagement_btnSave_Text" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="DeAnbaar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\DeAnbaar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InventoryList__radioInnventoryCode_Text" xml:space="preserve">
+    <value>کد کالا</value>
+  </data>
+  <data name="TaraznamehAzmayeshi_lbl_FromDate_Text" xml:space="preserve">
+    <value>از تاریخ</value>
+  </data>
+  <data name="HublblHubItemSalesText" xml:space="preserve">
+    <value>خريد و فروش</value>
+  </data>
+  <data name="PathManagment_BtnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="bullet_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bullet_blue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WorkerDefinition_AddAlaramRep" xml:space="preserve">
+    <value>نام كارگر نبايد تكراري باشد</value>
+  </data>
+  <data name="IRANSans_FaNum__UltraLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\IRANSans(FaNum)_UltraLight.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DaftareRuznamehInKol_lbl_FromNum_Text" xml:space="preserve">
+    <value>از شماره سند</value>
+  </data>
+  <data name="SalMaliManagement_lblAddName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="TarazNamehLevelKol_lbl_ToKol_Text" xml:space="preserve">
+    <value>تا حساب کل</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_Bank_Text" xml:space="preserve">
+    <value>بانک</value>
+  </data>
+  <data name="WarehouseInputDocument_lblTotalDetailCountTitle_Text" xml:space="preserve">
+    <value>جمع تعداد جزء</value>
+  </data>
+  <data name="ClaimAgentList_QSSSureSelect_MSG" xml:space="preserve">
+    <value>آیا از انتخاب خود مطمئن هستید</value>
+  </data>
+  <data name="TarazNameInLevelTafsil_lbl_FromMoein_Text" xml:space="preserve">
+    <value>از حساب معین</value>
+  </data>
+  <data name="Document_ERRInCreateDocument_MSG" xml:space="preserve">
+    <value>ثبت سند حداقل باید دارای 2 شماره حساب باشد</value>
+  </data>
+  <data name="ImportChecks_lblPayTo_Text" xml:space="preserve">
+    <value>در وجه</value>
+  </data>
+  <data name="SalMaliManagement_lblAddCompany_Text" xml:space="preserve">
+    <value>شرکت</value>
+  </data>
+  <data name="PathManagment_lblEpath_Text" xml:space="preserve">
+    <value>نام مسیر</value>
+  </data>
+  <data name="Rahyaab_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rahyaab_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="undo_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\undo_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GetCheck_Moname" xml:space="preserve">
+    <value>نام صاحب حساب نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="Hesabdari_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Hesabdari_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MasirManagement_btnAddCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="payChecks_lbl_Title_Text" xml:space="preserve">
+    <value>پرداخت وجه</value>
+  </data>
+  <data name="Backup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Backup.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HublblHubItemAccountingText" xml:space="preserve">
+    <value>حسابداری</value>
+  </data>
+  <data name="CustomerList_radioMobile_Text" xml:space="preserve">
+    <value>شماره موبایل</value>
+  </data>
+  <data name="Restore_33px_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Restore_33px_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Close_Tab_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_Tab_Active.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FinalDocument_lblSumBes_Text" xml:space="preserve">
+    <value>جمع ستون بستانکار</value>
+  </data>
+  <data name="GroupManagment_BtnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="Background_Accounting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Accounting.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Background_Selling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Background_Selling.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ReportDaftarMoein_lbl_FromMoein_Text" xml:space="preserve">
+    <value>از حساب معین</value>
+  </data>
+  <data name="ReportDaftarTafzili_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="paste_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\paste_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KalaGostaranPic_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\KalaGostaranPic_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sallery_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Sallery_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegionManagment_EditRegionName_MSG" xml:space="preserve">
+    <value>منطقه ویرایش شد</value>
+  </data>
+  <data name="copy_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Modiriat_Reports" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Modiriat-Reports.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mix_39px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Mix_39px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaraznamehAzmayeshi_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="GetDataMyBank_lbl_ShobeCode_Text" xml:space="preserve">
+    <value>کد شعبه</value>
+  </data>
+  <data name="circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AssinedTrackVisitorManagment_lblTitle_Text" xml:space="preserve">
+    <value>تخصیص ویزیتور به مسیر</value>
+  </data>
+  <data name="BankAndShheDefinition_AddShheAlaramEmp" xml:space="preserve">
+    <value>شماره حساب نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="ExportCheck_lblTafsilCode_Text" xml:space="preserve">
+    <value>کد حساب تفصیل</value>
+  </data>
+  <data name="Document_lblDocDesc_Text" xml:space="preserve">
+    <value>شرح سند</value>
+  </data>
+  <data name="CustomerDefinition_ErrorRegion" xml:space="preserve">
+    <value>شهر نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="Restore_33px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Restore_33px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WarehouseInputDocument_lblWaybill_Text" xml:space="preserve">
+    <value>شماره بارنامه</value>
+  </data>
+  <data name="copy_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\copy_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MasirManagement_btnAdd_Text" xml:space="preserve">
+    <value>افزودن</value>
+  </data>
+  <data name="redo_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\redo_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TarazNamehLevelMoein_lbl_ToDate_Text" xml:space="preserve">
+    <value>تا تاریخ</value>
+  </data>
+  <data name="Basic_InformationH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Basic-Information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bottom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\bottom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selling_Management_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling-Management_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\paste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RegionManagment_ERRNeedClickToNameForEditRegionName_MSG" xml:space="preserve">
+    <value>برای ویرایش منطقه روی نام منطقه کلیک کنید</value>
+  </data>
+  <data name="GrouhManagement_lblAddPermanent_Text" xml:space="preserve">
+    <value>حساب دائم</value>
+  </data>
+  <data name="VisitorManagment_lblTitle_Text" xml:space="preserve">
+    <value>مدیریت تیم فروش</value>
+  </data>
+  <data name="Rahyaab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Rahyaab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERR_PASSWORD_IS_EMPTY" xml:space="preserve">
+    <value>خطا - کلمه عبور وارد نشده است</value>
+  </data>
+  <data name="Icon_Warehouse_OFF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Icon_Warehouse_OFF.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GroupManagment_lblGroupName_Text" xml:space="preserve">
+    <value>نام گروه</value>
+  </data>
+  <data name="Size_Grip_20px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Size_Grip_20px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ExportCheck_lblFromCheck_Text" xml:space="preserve">
+    <value>از دسته چک</value>
+  </data>
+  <data name="ErrorEdit" xml:space="preserve">
+    <value>ويرايش با خطا مواجه شد</value>
+  </data>
+  <data name="Close_Tab_Active_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Close_Tab_Active_hover.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tab_23_Active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Tab_23_Active.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CustomerAllocationRouteManagment_BrnCancel_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="GetCheck_ShSerial" xml:space="preserve">
+    <value>شماره سريال چك نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="GetCheck_Shobe" xml:space="preserve">
+    <value>نام شعبه نمي‌تواند خالي باشد</value>
+  </data>
+  <data name="TopicList_radioTopic_Text" xml:space="preserve">
+    <value>سرفصل</value>
+  </data>
+  <data name="PathManagment_lblCity_Text" xml:space="preserve">
+    <value>نام شهر</value>
+  </data>
+  <data name="Treasury_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Treasurt_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green0_customer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Green0_customer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitsAndKalaDefinition_AlarmNakaRep" xml:space="preserve">
+    <value>نام كالا نبايد تكراري باشد</value>
+  </data>
+  <data name="LoacationList_radioProvince_Text" xml:space="preserve">
+    <value>استان</value>
+  </data>
+  <data name="GrouhManagement_lblEditName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="Backup_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Backup_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PathManagment_ERRInsertNamePath_MSG" xml:space="preserve">
+    <value>نام مسیر را وارد نمایید</value>
+  </data>
+  <data name="KolManagement_QSSSureDelete_MSG" xml:space="preserve">
+    <value>آیا از حذف این مورد اطمینان دارید؟</value>
+  </data>
+  <data name="Treasury_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Treasury_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_lbl_Title_Text" xml:space="preserve">
+    <value>زمانبندی تسویه فاکتورها</value>
+  </data>
+  <data name="ZamanBandiTasviehFactorha_lbl_EditTeadadRooz_Text" xml:space="preserve">
+    <value>تعداد روز:</value>
+  </data>
+  <data name="GrouhManagement_btnCancelAdd_Text" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="GetDataMyBank_lbl_AccountNumber_Text" xml:space="preserve">
+    <value>شماره حساب</value>
+  </data>
+  <data name="Settings_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Settings_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UnitsAndKalaDefinition_AlarmCokaRep" xml:space="preserve">
+    <value>كد كالا نبايد تكراري باشد</value>
+  </data>
+  <data name="ExportCheck_SaveCheckPardakhti_MSG" xml:space="preserve">
+    <value>چک پرداختی با موفقیت در سیستم ثبت شد</value>
+  </data>
+  <data name="VisitorManagment_lblVisitor_text" xml:space="preserve">
+    <value>نام ویزیتور</value>
+  </data>
+  <data name="Modiriat_Reports_H" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Modiriat-Reports_H.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BankAndShheDefinition_AddShheAlaram" xml:space="preserve">
+    <value>موارد ستاره دار را تكميل كنيد</value>
+  </data>
+  <data name="MasirManagement_lblAddName_Text" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="ImportChecks_lblDateBardasht_Text" xml:space="preserve">
+    <value>تاریخ برداشت</value>
+  </data>
+  <data name="PointArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\PointArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CityMangment_ERREditRepeatCity_MSG" xml:space="preserve">
+    <value>نام شهر در این استان تکراری است</value>
+  </data>
+  <data name="question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\question.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RepoetCheckDaryaft_lbl_Serial_Text" xml:space="preserve">
+    <value>سریال</value>
+  </data>
+  <data name="Selling_Management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Selling-Management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BankAndShheDefinition_AddShheAlaramRep" xml:space="preserve">
+    <value>شماره حساب نمي‌تواند تكراري باشد</value>
+  </data>
+  <data name="LoacationList_radioCity_Text" xml:space="preserve">
+    <value>شهر</value>
+  </data>
+  <data name="CityMangment_EditCityTreeView_MSG" xml:space="preserve">
+    <value>برای ویرایش شهر روی نام شهر کلیک نمایید</value>
+  </data>
+  <data name="Logo_SalePos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Logo_SalePos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AtiranFont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtiranFont.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AtiranFont_Bold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtiranFont_Bold.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AtiranFont_Light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtiranFont_Light.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AtiranFont_Medium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtiranFont_Medium.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AtiranFont_Number" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtiranFont_Number.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AtiranFont_UltraLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AtiranFont_UltraLight.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
