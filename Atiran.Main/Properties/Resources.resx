@@ -121,23 +121,23 @@
   <data name="Anbaar_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\anbaar_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Atiran2_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atiran2_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Backup_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backup_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Basic_Information_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\basic-information_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Maximis_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maximis_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EMS_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ems_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SMS_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sms_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Exit_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Exit_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-expand-arrow-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="expandDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expandDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Settings_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\settings_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="expandleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\expandleft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -145,58 +145,73 @@
   <data name="Hesabdari_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hesabdari_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LemonChiffon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LemonChiffon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Maximis_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Maximis_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Maximis_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Maximis_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minimis_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Minimis_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rahyaab_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rahyaab_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reports_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reports_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\selected.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Selling_Management_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\selling-management_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Selling_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Selling_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Settings_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\settings_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="SMS_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sms_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="status_online" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\status_online.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Treasury_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\treasury_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Treasury_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treasury_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reports_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reports_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Expand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-expand-arrow-26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="user_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Basic_Information_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basic-information_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selling_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Selling_Tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AtiranLogo_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AtiranLogo_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimis_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Minimis_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Selling_Management_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\selling-management_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maximis_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maximis_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LemonChiffon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LemonChiffon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Atiran2_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Atiran2_3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="expandDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expandDown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EMS_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ems_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rahyaab_Tiny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rahyaab_tiny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

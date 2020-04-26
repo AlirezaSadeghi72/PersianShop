@@ -99,6 +99,9 @@
     <Compile Include="Help.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Main\Hub.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +113,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\TabBarMenu.resx">
       <DependentUpon>TabBarMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -238,6 +244,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Atiran2_3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AtiranLogo_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
