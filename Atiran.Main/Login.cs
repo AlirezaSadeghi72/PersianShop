@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -36,8 +37,11 @@ namespace Atiran.Main
         private pictureBox picUser;
         private UI.WindowsForms.UIElements.Panel panel7;
         private UI.WindowsForms.UIElements.Panel pnlDownUser;
-        private Label lblMessage;
         private UI.WindowsForms.Controls.Timer timer1;
+        private pictureBox picFacebook;
+        private pictureBox picInstagram;
+        private pictureBox picTwitter;
+        private Label lblMessage;
         private System.ComponentModel.IContainer components = null;
 
 
@@ -49,6 +53,9 @@ namespace Atiran.Main
         private void InitializeComponent()
         {
             this.panel1 = new Atiran.UI.WindowsForms.UIElements.Panel();
+            this.picFacebook = new Atiran.UI.WindowsForms.Controls.pictureBox();
+            this.picInstagram = new Atiran.UI.WindowsForms.Controls.pictureBox();
+            this.picTwitter = new Atiran.UI.WindowsForms.Controls.pictureBox();
             this.panel12 = new Atiran.UI.WindowsForms.UIElements.Panel();
             this.btnEnter = new Atiran.UI.WindowsForms.Controls.Buttons.RefreshButton();
             this.btnExit = new Atiran.UI.WindowsForms.Controls.Buttons.ExitButton();
@@ -66,9 +73,12 @@ namespace Atiran.Main
             this.picUser = new Atiran.UI.WindowsForms.Controls.pictureBox();
             this.panel7 = new Atiran.UI.WindowsForms.UIElements.Panel();
             this.pnlDownUser = new Atiran.UI.WindowsForms.UIElements.Panel();
-            this.lblMessage = new Atiran.UI.WindowsForms.Controls.Label();
             this.timer1 = new Atiran.UI.WindowsForms.Controls.Timer();
+            this.lblMessage = new Atiran.UI.WindowsForms.Controls.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picFacebook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInstagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -86,14 +96,56 @@ namespace Atiran.Main
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.lblMessage);
+            this.panel1.Controls.Add(this.picFacebook);
+            this.panel1.Controls.Add(this.picInstagram);
+            this.panel1.Controls.Add(this.picTwitter);
             this.panel1.Controls.Add(this.panel12);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Font = new System.Drawing.Font("AtiranFont", 9.5F);
-            this.panel1.Location = new System.Drawing.Point(46, 303);
+            this.panel1.Location = new System.Drawing.Point(46, 283);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(253, 175);
+            this.panel1.Size = new System.Drawing.Size(253, 197);
             this.panel1.TabIndex = 0;
+            // 
+            // picFacebook
+            // 
+            this.picFacebook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picFacebook.Image = global::Atiran.Main.Properties.Resources.facebook1;
+            this.picFacebook.Location = new System.Drawing.Point(181, 162);
+            this.picFacebook.Name = "picFacebook";
+            this.picFacebook.Size = new System.Drawing.Size(32, 32);
+            this.picFacebook.TabIndex = 4;
+            this.picFacebook.TabStop = false;
+            this.picFacebook.Click += new System.EventHandler(this.picFacebook_Click);
+            this.picFacebook.MouseEnter += new System.EventHandler(this.picFacebook_MouseEnter);
+            this.picFacebook.MouseLeave += new System.EventHandler(this.picFacebook_MouseLeave);
+            // 
+            // picInstagram
+            // 
+            this.picInstagram.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picInstagram.Image = global::Atiran.Main.Properties.Resources.instagram1;
+            this.picInstagram.Location = new System.Drawing.Point(113, 162);
+            this.picInstagram.Name = "picInstagram";
+            this.picInstagram.Size = new System.Drawing.Size(32, 32);
+            this.picInstagram.TabIndex = 4;
+            this.picInstagram.TabStop = false;
+            this.picInstagram.Click += new System.EventHandler(this.picInstagram_Click);
+            this.picInstagram.MouseEnter += new System.EventHandler(this.picInstagram_MouseEnter);
+            this.picInstagram.MouseLeave += new System.EventHandler(this.picInstagram_MouseLeave);
+            // 
+            // picTwitter
+            // 
+            this.picTwitter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picTwitter.Image = global::Atiran.Main.Properties.Resources.twitter1;
+            this.picTwitter.Location = new System.Drawing.Point(44, 162);
+            this.picTwitter.Name = "picTwitter";
+            this.picTwitter.Size = new System.Drawing.Size(32, 32);
+            this.picTwitter.TabIndex = 4;
+            this.picTwitter.TabStop = false;
+            this.picTwitter.Click += new System.EventHandler(this.picTwitter_Click);
+            this.picTwitter.MouseEnter += new System.EventHandler(this.picTwitter_MouseEnter);
+            this.picTwitter.MouseLeave += new System.EventHandler(this.picTwitter_MouseLeave);
             // 
             // panel12
             // 
@@ -103,7 +155,7 @@ namespace Atiran.Main
             this.panel12.Font = new System.Drawing.Font("AtiranFont", 9.5F);
             this.panel12.Location = new System.Drawing.Point(0, 80);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(253, 62);
+            this.panel12.Size = new System.Drawing.Size(253, 56);
             this.panel12.TabIndex = 2;
             // 
             // btnEnter
@@ -299,20 +351,20 @@ namespace Atiran.Main
             this.pnlDownUser.Size = new System.Drawing.Size(253, 1);
             this.pnlDownUser.TabIndex = 0;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // lblMessage
             // 
             this.lblMessage.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMessage.Font = new System.Drawing.Font("AtiranFont", 9.5F);
             this.lblMessage.ForeColor = System.Drawing.Color.White;
-            this.lblMessage.Location = new System.Drawing.Point(0, 142);
+            this.lblMessage.Location = new System.Drawing.Point(0, 136);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(253, 33);
-            this.lblMessage.TabIndex = 3;
+            this.lblMessage.Size = new System.Drawing.Size(253, 22);
+            this.lblMessage.TabIndex = 5;
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Login
             // 
@@ -325,6 +377,9 @@ namespace Atiran.Main
             this.Size = new System.Drawing.Size(800, 500);
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picFacebook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picInstagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTwitter)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -511,6 +566,57 @@ namespace Atiran.Main
             if (this.Width >= 792 && this.Height >= 495)
                 timer1.Stop();
 
+        }
+
+        private void picTwitter_MouseEnter(object sender, EventArgs e)
+        {
+            picTwitter.Image = Properties.Resources.twitter2;
+        }
+
+        private void picTwitter_Click(object sender, EventArgs e)
+        {
+            OpenURL("https://twitter.com/ASharafzade");
+        }
+
+        private void picTwitter_MouseLeave(object sender, EventArgs e)
+        {
+            picTwitter.Image = Properties.Resources.twitter1;
+        }
+
+        private void picInstagram_MouseEnter(object sender, EventArgs e)
+        {
+            picInstagram.Image = Properties.Resources.instagram2;
+        }
+
+        private void picInstagram_Click(object sender, EventArgs e)
+        {
+            OpenURL("https://www.instagram.com/AlirezaSadeghi_1993/");
+        }
+
+        private void picInstagram_MouseLeave(object sender, EventArgs e)
+        {
+            picInstagram.Image = Properties.Resources.instagram1;
+        }
+
+        private void picFacebook_MouseEnter(object sender, EventArgs e)
+        {
+            picFacebook.Image = Properties.Resources.facebook2;
+        }
+
+        private void picFacebook_Click(object sender, EventArgs e)
+        {
+            OpenURL("https://www.facebook.com/ali.sh.33671748");
+        }
+
+        private void picFacebook_MouseLeave(object sender, EventArgs e)
+        {
+            picFacebook.Image = Properties.Resources.facebook1;
+        }
+
+        private void OpenURL(string URL)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo(URL);
+            Process.Start(sInfo);
         }
     }
 }

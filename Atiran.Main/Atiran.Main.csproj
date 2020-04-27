@@ -260,5 +260,23 @@
   <ItemGroup>
     <None Include="Resources\lock1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instagram1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
